@@ -1,0 +1,72 @@
+/* details */
+summary {
+    cursor: pointer;
+    list-style: none;
+    /* Прибирає стандартний трикутник */
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+
+}
+
+summary::before {
+    content: "+";
+    font-size: 16px;
+    /* Оптимальний розмір символу */
+    font-weight: bold;
+    color: white;
+    background: #02897A;
+
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 24px;
+    /* Головний трюк для вирівнювання */
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+details[open] summary::before {
+    content: "-";
+
+}
+
+
+
+/* form input */
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #007965;
+
+}
+
+input {
+    border: none;
+    padding: 10px 10px 10px 35px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}

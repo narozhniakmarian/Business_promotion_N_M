@@ -8,12 +8,15 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!-- header -->
     <header>
-      <a href="./index.html" class="logo"><img src="" alt="" />Product</a>
+      <a href="./index.html" class="logo"
+        ><img src="./icons/logo.svg" alt="" />Product</a
+      >
       <nav class="navbsr">
         <ul class="navbar-list">
           <li class="navbar-item"><a href="./index.html">Product</a></li>
@@ -64,7 +67,7 @@
           <li class="specificalli-card">
             <img src="./icons/icon-1.svg" alt="cursor" />
             <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
+            <p>While most people enjoy casino gambling</p>
           </li>
           <li class="specificalli-card">
             <img src="./icons/icon-2.svg" alt="Design surveys" />
@@ -88,18 +91,18 @@
       <!-- section-3 -->
       <section class="section-3">
         <h2 class="text-align-start">
-          <span>Effortless Validation for</span>Management
+          <span>Effortless Validation for</span> <br />Management
         </h2>
         <p class="text-under-ts3">
           The Myspace page defines the individual, his or her characteristics,
           traits, personal choices and the overall personality of the person.
         </p>
-        <h4 class="minor-ts3">Accessory makers</h4>
+        <h3 class="minor-ts3">Accessory makers</h3>
         <p class="text-s3">
           While most people enjoy casino gambling, sports betting, lottery and
           bingo playing for the fun
         </p>
-        <h4 class="minor-ts3">Alterationists</h4>
+        <h3 class="minor-ts3">Alterationists</h3>
         <p class="text-s3">
           If you are looking for a new way to promote your business that won’t
           cost you more money,
@@ -110,7 +113,7 @@
       <!-- section-4 -->
       <section class="section-4">
         <h2 class="text-align-start">
-          <span>Easier decision making for</span>Customer Support
+          <span>Easier decision making for</span><br />Customer Support
         </h2>
         <p class="text-under-ts4">
           The Myspace page defines the individual, his or her characteristics,
@@ -139,19 +142,19 @@
       <!-- section-5 -->
       <section class="section-5">
         <h2 class="text-align-start">
-          <span>Optimisation for</span>Collaborative
+          <span>Optimisation for</span><br />Collaborative
         </h2>
         <p class="text-under-ts5">
           Few would argue that, despite the advancements of feminism over the
           past three decades, women still face a double standard when it comes
           to their behavior.
         </p>
-        <h4 class="minor-ts5">Accessory makers</h4>
+        <h3 class="minor-ts5">Accessory makers</h3>
         <p class="text-s5">
           While most people enjoy casino gambling, sports betting, lottery and
           bingo playing for the fun
         </p>
-        <h4 class="minor-ts5">Alterationists</h4>
+        <h3 class="minor-ts5">Alterationists</h3>
         <p class="text-s5">
           If you are looking for a new way to promote your business that won’t
           cost you more money,
@@ -230,62 +233,54 @@
       <section class="section-8">
         <h2 class="text-align-center">Price Table</h2>
         <p class="text-under-ts8">We offer competitive price</p>
-        <ul class="table-card">
-          <li class="card-item-table">
-            <h3 class="tile-card">Free</h3>
-            <p class="card-name">Brief price description</p>
-            <ul class="price">
-              <li>
-                <span class="price-value">0</span
-                ><span class="currency">$</span>
-              </li>
-              <li class="per-month">
-                <p>Per</p>
-                / month
-              </li>
-            </ul>
-            <ul class="option-card">
-              <li class="option-name"><p>Only 2 Operators</p></li>
-              <li class="option-name"><p>Notifications</p></li>
-              <li class="option-name"><p>Landing Pages</p></li>
-            </ul>
-            <button type="button" class="order-now">Order Now</button>
-          </li>
-          <li class="card-item-table-creen">
-            <h3 class="tile-card">Standard</h3>
-            <p class="card-name">Brief price description</p>
-            <ul class="price">
-              <li>
-                <span class="price-value">5</span
-                ><span class="currency">$</span>
-              </li>
-              <li class="per-month"><p>Per / month</p></li>
-            </ul>
-            <ul class="option-card">
-              <li class="option-name"><p>5+ Operators</p></li>
-              <li class="option-name"><p>Notifications</p></li>
-              <li class="option-name"><p>Landing Pages</p></li>
-            </ul>
-            <button type="button" class="order-now-whait">Order Now</button>
-          </li>
-          <li class="card-item-table">
-            <h3 class="tile-card">Premium</h3>
-            <p class="card-name">Brief price description</p>
-            <ul class="price">
-              <li>
-                <span class="price-value">10</span
-                ><span class="currency">$</span>
-              </li>
-              <li class="per-month"><p>Per / month</p></li>
-            </ul>
-            <ul class="option-card">
-              <li class="option-name"><p>10+ Operators</p></li>
-              <li class="option-name"><p>Notifications</p></li>
-              <li class="option-name"><p>Landing Pages</p></li>
-            </ul>
-            <button type="button" class="order-now">Order Now</button>
-          </li>
-        </ul>
+
+        <div>
+          <h3 class="tile-card">Free</h3>
+          <p class="card-name">Brief price description</p>
+          <div class="">
+            <span class="price-value">0</span>
+            <span class="currency">$</span>
+            <p>Per / month</p>
+          </div>
+          <div>
+            <p>Only 2 Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+
+          <button type="button" class="order-now">Order Now</button>
+        </div>
+        <div>
+          <h3 class="tile-card">Standard</h3>
+          <p class="card-name">Brief price description</p>
+          <div>
+            <span class="price-value">5</span><span class="currency">$</span>
+            <p>Per / month</p>
+          </div>
+          <div>
+            <p>5+ Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+
+          <button type="button" class="order-now-whait">Order Now</button>
+        </div>
+        <div>
+          <h3 class="tile-card">Premium</h3>
+          <p class="card-name">Brief price description</p>
+          <div>
+            <span class="price-value">10</span><span class="currency">$</span>
+
+            <p>Per / month</p>
+          </div>
+          <div>
+            <p>10+ Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+          </div>
+
+          <button type="button" class="order-now">Order Now</button>
+        </div>
       </section>
       <!-- section-8 -->
       <!-- section-9 -->
@@ -310,9 +305,11 @@
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img src="./images/Ellipse1.png" alt="pickture with Designer" />
-            <h4 class="green-title">Wahid Ari</h4>
-            <h5>Designer</h5>
+            <div>
+              <img src="./images/Ellipse1.png" alt="pickture with Designer" />
+              <h4 class="green-title">Wahid Ari</h4>
+              <h5>Designer</h5>
+            </div>
           </li>
           <li class="opinien-item">
             <ul class="stars-box">
@@ -328,9 +325,11 @@
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img src="./images/Ellipse2.png" alt="pickture with Designer" />
-            <h4 class="green-title">Wahid Ari</h4>
-            <h5>Designer</h5>
+            <div>
+              <img src="./images/Ellipse2.png" alt="pickture with Designer" />
+              <h4 class="green-title">Wahid Ari</h4>
+              <h5>Designer</h5>
+            </div>
           </li>
           <li class="opinien-item">
             <ul class="stars-box">
@@ -346,18 +345,20 @@
               Product helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            <img src="./images/Ellipse3.png" alt="pickture with Designer" />
-            <h4 class="green-title">Wahid Ari</h4>
-            <h5>Designer</h5>
+            <div>
+              <img src="./images/Ellipse3.png" alt="pickture with Designer" />
+              <h4 class="green-title">Wahid Ari</h4>
+              <h5>Designer</h5>
+            </div>
           </li>
         </ul>
       </section>
       <!-- section-9 -->
       <!-- section-10 -->
       <section class="section-10">
-        <h2 class="title-s10">
+        <p class="title-s10">
           Join 100 Compannies who boost their business with Product
-        </h2>
+        </p>
         <button type="button">Get This</button
         ><img src="./images/graphics.png" alt="web pages" />
       </section>
@@ -367,45 +368,58 @@
     <!-- footer -->
     <footer>
       <div class="footer-box">
-        <a href="./index.html" class="logo"
-          ><img src="./icons/logo.svg" alt="logo" />Product</a
-        >
-        <ul class="social-icons">
-          <li class="social-icons-insta">
-            <img src="./icons/instagram.svg" alt="icon instagram" />
-          </li>
-          <li class="social-icons-fb">
-            <img src="./icons/facebook.svg" alt="icon facebook" />
-          </li>
-          <li class="social-icons-twit">
-            <img src="./icons/twitter.svg" alt="icon twitter" />
-          </li>
-        </ul>
-        <h4 class="title-footer-list-1">Resource</h4>
-        <ul class="footer-list-1">
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
-        <h4 class="title-footer-list-2">Legal Stuff</h4>
-        <ul class="footer-list-2">
-          <li><a href="">Disclaimer</a></li>
-          <li><a href="">Financing</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
+        <div>
+          <a href="./index.html" class="logo"
+            ><img src="./icons/logo.svg" alt="logo" />Product</a
+          >
+          <div>
+            <a href=""
+              ><img src="./icons/instagram.svg" alt="icon instagram" /></a
+            ><a href="">
+              <img src="./icons/facebook.svg" alt="icon facebook" /></a
+            ><a href="">
+              <img src="./icons/twitter.svg" alt="icon twitter"
+            /></a>
+          </div>
+        </div>
+        <div>
+          <div class="title-footer-list-1">Resource</div>
+
+          <a href="">About Us</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+          <a href="">FAQ</a>
+        </div>
+        <div>
+          <div class="title-footer-list-2">Legal Stuff</div>
+
+          <a href="">Disclaimer</a>
+          <a href="">Financing</a>
+          <a href="">Privacy Policy</a>
+        </div>
         <div class="form">
-          <h4 class="form-title">
+          <p class="form-title">
             knowing you're always on the best energy deal.
-          </h4>
+          </p>
           <form action="">
-            <input id="tel" placeholder="Enter your phone number" type="tel" />
+            <div class="input-wrapper">
+              <span class="icon"
+                ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
+              /></span>
+              <input
+                id="tel"
+                placeholder="Enter your phone number"
+                type="tel"
+              />
+            </div>
             <button type="button">Sign up Now</button>
           </form>
         </div>
-        <p class="bottom-text">
-          Made With Love By Figmaland All Right Reserved
-        </p>
+        <div>
+          <p class="bottom-text">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+        </div>
       </div>
     </footer>
     <!-- footer -->
