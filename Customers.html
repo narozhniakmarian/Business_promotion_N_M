@@ -11,11 +11,11 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="header">
       <a href="./index.html" class="logo"
         ><img src="./icons/logo.svg" alt="" />Product</a
       >
-      <nav class="navbsr">
+      <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item"><a href="./index.html">Product</a></li>
           <li class="navbar-item"><a href="./Pricing.html">Pricing</a></li>
@@ -31,143 +31,184 @@
     <!-- header -->
     <!-- main -->
     <main>
-      <!-- section-1 -->
-      <section class="costomers-sec-1">
-        <h1 class="costomers-title-s1">Our Clients</h1>
-        <div class="lists-compani-colaboracion">
-          <a href=""> <img src="./icons/AirbnbLogo.svg" alt="logo airbnb" /> </a
+      <!-- section-ourclients -->
+      <section class="ourclients">
+        <h1 class="ourclients__title">Our Clients</h1>
+        <div class="ourclients__logos">
+          <a href="">
+            <img
+              src="./icons/AirbnbLogo.svg"
+              alt="logo airbnb"
+              class="airbnb"
+            /> </a
           ><a href="">
-            <img src="./icons/GoogleLogo.svg" alt="logog google" />
+            <img
+              src="./icons/GoogleLogo.svg"
+              alt="logog google"
+              class="google"
+            />
 
-            <img src="./icons/MicrosoftLogo.svg" alt=" logo microsoft" /> </a
+            <img
+              src="./icons/MicrosoftLogo.svg"
+              alt=" logo microsoft"
+              class="microsoft"
+            /> </a
           ><a href=""></a
           ><a href="">
-            <img src="./icons/FedExLogo.svg" alt="logo fedex" />
+            <img src="./icons/FedExLogo.svg" alt="logo fedex" class="fedex" />
           </a>
         </div>
       </section>
-      <!-- section-1 -->
+      <!-- section-ourclients -->
 
-      <!-- section-2 -->
-      <section class="costomers-sec-2">
-        <h2 class="text-align-center">Why Choose Product?</h2>
-        <ul class="costomers-specifically-list">
-          <li class="costomers-specificalli-card">
-            <img src="./icons/icon-1.svg" alt="cursor" />
-            <h3>Special Business</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li class="specificalli-card">
-            <img src="./icons/icon-2.svg" alt="Design surveys" />
-            <h3>Instant Result</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li class="specificalli-card">
-            <img src="./icons/icon-7.svg" alt="Preference tests" />
-            <h3>Fastest way to organize</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-        </ul>
+      <!-- section-costomers__features -->
+      <section class="costomers__features">
+        <h2 class="costomers__features__title">Why Choose Product?</h2>
+        <div class="costomers__features__container">
+          <ul class="costomers__feature-list">
+            <li class="costomers__feature-item">
+              <img src="./icons/icon-1.svg" alt="cursor" />
+              <h3 class="features__item__title">Special Business</h3>
+              <p class="features__item__description">
+                Product helps you see how many more days you need to work to
+                reach your financial goal for the month and year.
+              </p>
+            </li>
+            <li class="costomers__feature-item">
+              <img src="./icons/icon-2.svg" alt="Design surveys" />
+              <h3 class="features__item__title">Instant Result</h3>
+              <p class="features__item__description">
+                Product helps you see how many more days you need to work to
+                reach your financial goal for the month and year.
+              </p>
+            </li>
+            <li class="costomers__feature-item">
+              <img src="./icons/icon-7.svg" alt="Preference tests" />
+              <h3 class="features__item__title">Fastest way to organize</h3>
+              <p class="features__item__description">
+                Product helps you see how many more days you need to work to
+                reach your financial goal for the month and year.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <!-- section-2 -->
+      <!-- section-costomers__features -->
 
-      <!-- section-3 -->
-      <section class="costomers-sec-3">
-        <h2 class="text-align-center">How Product Work?</h2>
-        <ol>
-          <li>
-            <img src="./images/mac1.png" alt="leptop with open windor" />
-            <div>
-              <h3><span>STEP 1</span>Apply for a product</h3>
-              <p>
-                Completing our easy step-by-step application form gives you
-                access to multiple business with multiple products. We analyse
-                your business through our proprietary credit analysis technology
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3><span>STEP 2</span>Pay fully refundable</h3>
-              <p>
-                Product will contactting you instantly to receive payment of the
-                Application Fee. if no offer of product is available, your fee
-                will be fully refunded.
-              </p>
-            </div>
-            <img src="./images/mac2.png" alt="leptop with open dark windor" />
-          </li>
-          <li>
-            <img src="./images/mac3.png" alt="leptop with open wive windor" />
-            <div>
-              <h3><span>STEP 3</span>Completion</h3>
-              <p>
-                Product will continue to liase between borrower and manager to
-                procees and complete a quick and efficient settlement
-              </p>
-            </div>
-          </li>
-        </ol>
+      <!-- section-group -->
+      <section class="group">
+        <h2 class="group__title">How Product Work?</h2>
+        <div class="group__container">
+          <ol class="group__list">
+            <li class="group__list-item">
+              <div class="group__syep-box">
+                <img src="./images/mac1.png" alt="leptop with open windor" />
+                <div class="ctep__contant">
+                  <h3 class="step__title">
+                    <span class="step">STEP 1</span>Apply for a product
+                  </h3>
+                  <p class="step__text">
+                    Completing our easy step-by-step application form gives you
+                    access to multiple business with multiple products. We
+                    analyse your business through our proprietary credit
+                    analysis technology
+                  </p>
+                </div>
+              </div>
+            </li>
 
+            <div class="group__syep-box">
+              <li class="group__list-item">
+                <div class="ctep__contant">
+                  <h3 class="step__title">
+                    <span class="step">STEP 2</span>Pay fully refundable
+                  </h3>
+                  <p class="step__text">
+                    Product will contactting you instantly to receive payment of
+                    the Application Fee. if no offer of product is available,
+                    your fee will be fully refunded.
+                  </p>
+                </div>
+                <img
+                  src="./images/mac2.png"
+                  alt="leptop with open dark windor"
+                />
+              </li>
+            </div>
+
+            <div class="group__syep-box">
+              <li class="group__list-item">
+                <div class="ctep__contant">
+                  <img
+                    src="./images/mac3.png"
+                    alt="leptop with open wive windor"
+                  />
+                  <h3 class="step__title">
+                    <span class="step">STEP 3</span>Completion
+                  </h3>
+                  <p class="step__text">
+                    Product will continue to liase between borrower and manager
+                    to procees and complete a quick and efficient settlement
+                  </p>
+                </div>
+              </li>
+            </div>
+          </ol>
+        </div>
         <button type="button">Get in touch with us</button>
       </section>
-      <!-- section-3 -->
-      <!-- section-4 -->
+      <!-- section-group -->
+      <!-- section-comparison -->
 
-      <section class="costomers-sec-4">
-        <h2 class="text-align-center">
+      <section class="comparison">
+        <h2 class="comparison__title">
           Join thousand of other who have already received offers
         </h2>
-        <div class="tipe-offer">
-          <div>
-            <img src="./icons/Activity.svg" alt="Activity" />
-            <h3>Business</h3>
-            <p>Cash Flow</p>
-            <p>Asset Backed</p>
-            <p>Receivables Finance</p>
-            <p>Find the best business product</p>
+        <div class="comparison__container">
+          <div class="container__busennes">
+            <img
+              src="./icons/Activity.svg"
+              alt="Activity"
+              class="busieness-icon"
+            />
+            <h3 class="comparison__container-title">Business</h3>
+            <p class="comparison__description">Cash Flow</p>
+            <p class="comparison__description">Asset Backed</p>
+            <p class="comparison__description">Receivables Finance</p>
+            <p class="comparison__text">Find the best business product</p>
           </div>
-          <div>
-            <img src="./icons/Chart.svg" alt="Chart" />
-            <h3>Enterprise</h3>
-            <p>Site Acquisition</p>
-            <p>Bridge</p>
-            <p>Development Financing</p>
+          <div class="container__enterprise">
+            <img src="./icons/Chart.svg" alt="Chart" class="enterprise-icon" />
+            <h3 class="comparison__container-title">Enterprise</h3>
+            <p class="comparison__description">Site Acquisition</p>
+            <p class="comparison__description">Bridge</p>
+            <p class="comparison__description">Development Financing</p>
 
-            <p>Find the best business product</p>
+            <p class="comparison__text">Find the best business product</p>
           </div>
         </div>
       </section>
-      <!-- section-4 -->
-      <!-- section-5 -->
-      <section class="section-10">
-        <p class="title-s10">
+      <!-- section-comparison -->
+      <!-- section-promo -->
+      <section class="promo">
+        <p class="promo__title">
           Join 100 Compannies who boost their business with Product
         </p>
-        <button type="button">Get This</button
-        ><img src="./images/graphics.png" alt="web pages" />
+        <button type="button" class="promo__btn">Get This</button
+        ><img src="./images/graphics.png" alt="web pages" class="promo__page" />
       </section>
-      <!-- section-5 -->
+      <!-- section-promo -->
     </main>
     <!-- main -->
 
     <!-- footer -->
-    <footer>
-      <div class="footer-box">
-        <div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
           <a href="./index.html" class="logo"
             ><img src="./icons/logo.svg" alt="logo" />Product</a
           >
-          <div>
+          <div class="social__container">
             <a href=""
               ><img src="./icons/instagram.svg" alt="icon instagram" /></a
             ><a href="">
@@ -177,28 +218,31 @@
             /></a>
           </div>
         </div>
-        <div>
-          <div class="title-footer-list-1">Resource</div>
+        <div class="footer__links">
+          <div class="footer__section">
+            <div class="footer__title"><p>Resource</p></div>
 
-          <a href="">About Us</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-          <a href="">FAQ</a>
-        </div>
-        <div>
-          <div class="title-footer-list-2">Legal Stuff</div>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">FAQ</a>
+          </div>
 
-          <a href="">Disclaimer</a>
-          <a href="">Financing</a>
-          <a href="">Privacy Policy</a>
+          <div class="footer__section">
+            <div class="footer__title"><p>Legal Stuff</p></div>
+
+            <a href="">Disclaimer</a>
+            <a href="">Financing</a>
+            <a href="">Privacy Policy</a>
+          </div>
         </div>
-        <div class="form">
-          <p class="form-title">
+        <div class="footer__form">
+          <p class="footer__form-title">
             knowing you're always on the best energy deal.
           </p>
           <form action="">
-            <div class="input-wrapper">
-              <span class="icon"
+            <div class="footer__input-wrapper">
+              <span class="input__icon"
                 ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
               /></span>
               <input

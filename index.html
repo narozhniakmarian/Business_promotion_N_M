@@ -13,11 +13,11 @@
 
   <body>
     <!-- header -->
-    <header>
+    <header class="header">
       <a href="./index.html" class="logo"
         ><img src="./icons/logo.svg" alt="" />Product</a
       >
-      <nav class="navbsr">
+      <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item"><a href="./index.html">Product</a></li>
           <li class="navbar-item"><a href="./Pricing.html">Pricing</a></li>
@@ -33,15 +33,15 @@
     <!-- header -->
     <!-- main -->
 
-    <main>
-      <!-- section-1 -->
-      <section class="section-1">
-        <h1 class="title-s1">Work at the speed of thought</h1>
-        <p class="text-s1">
+    <main class="wrapper">
+      <!-- section-hero -->
+      <section class="hero">
+        <h1 class="hero_title">Work at the speed of thought</h1>
+        <p class="hero_description">
           Tools, tutorials, design and innovation experts, all in one place! The
           most intuitive way to imagine your next user experience.
         </p>
-        <ul>
+        <ul class="hero_buttons">
           <li>
             <button type="button" class="get-started">Get started</button>
           </li>
@@ -55,30 +55,35 @@
           src="./images/hero-img.svg"
           alt="the piople watch divices"
           width="610"
+          class="hero__image"
         />
       </section>
-      <!-- section-1 -->
-      <!-- section-2 -->
-      <section class="section-2">
-        <div>
-          <h2 class="text-align-center">
-            Product was Built Specifically for You
-          </h2>
-          <ul class="specifically-list">
-            <li class="specificalli-card">
+      <!-- section-hero -->
+      <!-- section-features -->
+      <section class="features">
+        <h2 class="features__title">Product was Built Specifically for You</h2>
+        <div class="features_container">
+          <ul class="features__list">
+            <li class="features__item">
               <img src="./icons/icon-1.svg" alt="cursor" />
-              <h3>First click tests</h3>
-              <p>While most people enjoy casino gambling</p>
+              <h3 class="features__item__title">First click tests</h3>
+              <p class="features__item__description">
+                While most people enjoy casino gambling
+              </p>
             </li>
             <li class="specificalli-card">
               <img src="./icons/icon-2.svg" alt="Design surveys" />
-              <h3>Design surveys</h3>
-              <p>Sports betting, lottery and bingo playing for the fun</p>
+              <h3 class="features__item__title">Design surveys</h3>
+              <p class="features__item__description">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
             </li>
             <li class="specificalli-card">
               <img src="./icons/icon-3.svg" alt="Preference tests" />
-              <h3>Preference tests</h3>
-              <p>The Myspace page defines the individual.</p>
+              <h3 class="features__item__title">Preference tests</h3>
+              <p class="features__item__description">
+                The Myspace page defines the individual.
+              </p>
             </li>
             <li class="specificalli-card">
               <img src="./icons/icon-ckloc.svg" alt="cklok" />
@@ -89,302 +94,358 @@
         </div>
         <button type="button" class="sigb-up-now">SIGN UP NOW</button>
       </section>
-      <!-- section-2 -->
-      <!-- section-3 -->
-      <section class="section-3">
-        <div>
-          <h2 class="text-align-start">
-            <span>Effortless Validation for</span> <br />Management
+      <!-- features-section -->
+      <!-- section-Management -->
+      <section class="management">
+        <div class="management__container">
+          <h2 class="management__title">
+            <span class="management__subtitle">Effortless Validation for</span>
+            <br />Management
           </h2>
-          <p class="text-under-ts3">
+          <p class="management__description">
             The Myspace page defines the individual, his or her characteristics,
             traits, personal choices and the overall personality of the person.
           </p>
-          <h3 class="minor-ts3">Accessory makers</h3>
-          <p class="text-s3">
-            While most people enjoy casino gambling, sports betting, lottery and
-            bingo playing for the fun
-          </p>
-          <h3 class="minor-ts3">Alterationists</h3>
-          <p class="text-s3">
-            If you are looking for a new way to promote your business that won’t
-            cost you more money,
-          </p>
+          <div class="accesory__content">
+            <h3 class="accesory__title">Accessory makers</h3>
+            <p class="accesory__text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+          </div>
+          <div class="alterationists">
+            <h3 class="alterationists__title">Alterationists</h3>
+            <p class="alterationists__text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+          </div>
         </div>
-        <img src="./images/management-img.svg" alt="management" />
+        <img
+          src="./images/management-img.svg"
+          alt="management"
+          class="alterationists__page"
+        />
       </section>
-      <!-- section-3 -->
-      <!-- section-4 -->
-      <section class="section-4">
-        <div>
-          <h2 class="text-align-start">
-            <span>Easier decision making for</span><br />Customer Support
+      <!-- section-Management -->
+      <!-- section-support -->
+      <section class="support">
+        <div class="support__container">
+          <h2 class="support__title">
+            <span class="support__subtitle">Easier decision making for</span
+            ><br />Customer Support
           </h2>
-          <p class="text-under-ts4">
+          <p class="support__description">
             The Myspace page defines the individual, his or her characteristics,
             traits, personal choices and the overall personality of the person.
           </p>
-          <ul class="list-section-4">
-            <li class="list-item-s4">
-              <img src="./icons/icon-6.svg" alt="" />
-              <p>Never worry about overpaying for your energy again.</p>
+          <ul class="support__list">
+            <li class="support__list-item">
+              <img
+                src="./icons/icon-6.svg"
+                alt=""
+                class="support__list__icon-orange"
+              />
+              <p class="support__list-text">
+                Never worry about overpaying for your energy again.
+              </p>
             </li>
-            <li class="list-item-s4">
-              <img src="./icons/icon.svg" alt="" />
-              <p>
+            <li class="support__list-item">
+              <img
+                src="./icons/icon.svg"
+                alt=""
+                class="support__list__icon-red"
+              />
+              <p class="support__list-text">
                 We will only switch you to energy companies that we trust and
                 will treat you right
               </p>
             </li>
-            <li class="list-item-s4">
-              <img src="./icons/icon-5.svg" alt="" />
-              <p>We track the markets daily and know where the savings are.</p>
+            <li class="support__list-item">
+              <img
+                src="./icons/icon-5.svg"
+                alt=""
+                class="support__list__icon-blue"
+              />
+              <p class="support__list-text">
+                We track the markets daily and know where the savings are.
+              </p>
             </li>
           </ul>
         </div>
-        <img src="./images/support-img.svg" alt="laptop" />
+        <img
+          src="./images/support-img.svg"
+          alt="laptop"
+          class="support__page"
+        />
       </section>
-      <!-- section-4 -->
-      <!-- section-5 -->
-      <section class="section-5">
-        <div>
-          <h2 class="text-align-start">
-            <span>Optimisation for</span><br />Collaborative
+      <!-- section-support -->
+      <!-- section-collaborative -->
+      <section class="collaborative">
+        <div class="collaborative__container">
+          <h2 class="collaborative__title">
+            <span class="collaborative__subtitle">Optimisation for</span
+            ><br />Collaborative
           </h2>
-          <p class="text-under-ts5">
+          <p class="collaborative__description">
             Few would argue that, despite the advancements of feminism over the
             past three decades, women still face a double standard when it comes
             to their behavior.
           </p>
-          <h3 class="minor-ts5">Accessory makers</h3>
-          <p class="text-s5">
-            While most people enjoy casino gambling, sports betting, lottery and
-            bingo playing for the fun
-          </p>
-          <h3 class="minor-ts5">Alterationists</h3>
-          <p class="text-s5">
-            If you are looking for a new way to promote your business that won’t
-            cost you more money,
-          </p>
+          <div class="accesory__content">
+            <h3 class="accesory__title">Accessory makers</h3>
+            <p class="accesory__text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+          </div>
+          <div class="alterationists">
+            <h3 class="alterationists__title">Alterationists</h3>
+            <p class="alterationists__text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+          </div>
         </div>
-        <img src="./images/collaboration-img.svg" alt="callaboration" />
+        <img
+          src="./images/collaboration-img.svg"
+          alt="callaboration"
+          class="collaborative__page"
+        />
       </section>
-      <!-- section-5 -->
-      <!-- section-6 -->
-      <section class="section-6">
-        <h2 class="text-align-center">Quick & Easy Process</h2>
-        <p class="text-under-ts6">
+      <!-- section-collaborative -->
+      <!-- section-staff -->
+      <section class="staff">
+        <h2 class="staff__title">Quick & Easy Process</h2>
+        <p class="staff__description">
           Do you require some help for your project: Conception workshop,
           prototyping, marketing strategy, landing page, Ux/UI?
         </p>
-        <div>
-          <ul class="quick-list">
-            <li class="quick-item list">
-              <img src="./images/avatar1.png" alt="" />
-              <p class="commit-quick-list">I can take care of your pitch</p>
-            </li>
-            <li class="quick-item list">
-              <img src="./images/avatar2.png" alt="" />
-              <p class="commit-quick-list">I can prototype your app</p>
-            </li>
-          </ul>
-          <ul>
-            <li class="quick-item list">
-              <img src="./images/avatar3.png" alt="" />
-              <p class="commit-quick-list">I can take care of your pitch</p>
-            </li>
-            <li class="quick-item list">
-              <img src="./images/avatar4.png" alt="" />
-              <p class="commit-quick-list">I can help marketing strategy</p>
-            </li>
-          </ul>
+        <div class="service__container">
+          <div class="service__box1">
+            <img src="./images/avatar1.png" alt="" />
+            <p class="commit-quick-list">I can take care of your pitch</p>
+          </div>
+          <div class="service__box2">
+            <p class="commit-quick-list">I can prototype your app</p>
+            <img src="./images/avatar2.png" alt="" />
+          </div>
+
+          <div class="service__box3">
+            <p class="commit-quick-list">I can take care of your pitch</p>
+            <img src="./images/avatar3.png" alt="" />
+          </div>
+          <div class="service__box4">
+            <img src="./images/avatar4.png" alt="" />
+            <p class="commit-quick-list">I can help marketing strategy</p>
+          </div>
         </div>
         <button type="button" class="contact-our-expert">
           Contact our expert
         </button>
       </section>
-      <!-- section-7 -->
-      <section class="section-7">
-        <h2 class="text-align-start">Contents Strategies</h2>
-        <p class="text-under-ts7">
+      <!-- section-staff -->
+      <!-- section-news -->
+      <section class="news">
+        <h2 class="news__title">Contents Strategies</h2>
+        <p class="news__description">
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.
         </p>
-        <ul class="contents-card">
-          <li class="content-card-item">
-            <img src="./images/image1.png" alt="working for laptops" />
-            <p class="text-card">
-              By <span class="span-card">Wahid Ari</span> | 03 March 2019
-            </p>
-            <h3 class="lable-card">
-              Increasing Prosperity With Positive Thinking
-            </h3>
-          </li>
-          <li class="content-card-item">
-            <img src="./images/image2.png" alt="" />
-            <p class="text-card">
-              By <span class="span-card">Wahid Ari</span> | 03 March 2019
-            </p>
-            <h3 class="lable-card-green">
-              Motivation Is The First Step To Success
-            </h3>
-          </li>
-          <li class="content-card-item">
-            <img src="./images/image3.png" alt="" />
-            <p class="text-card">
-              By <span class="span-card">Wahid Ari</span> | 03 March 2019
-            </p>
-            <h3 class="lable-card">
-              Success Steps For Your Personal Or Business
-            </h3>
-          </li>
-        </ul>
-      </section>
-      <!-- section-7 -->
-      <!-- section-8 -->
-      <section class="section-8">
-        <h2 class="text-align-center">Price Table</h2>
-        <p class="text-under-ts8">We offer competitive price</p>
-
-        <div>
-          <h3 class="tile-card">Free</h3>
-          <p class="card-name">Brief price description</p>
-          <div class="">
-            <span class="price-value">0</span>
-            <span class="currency">$</span>
-            <p>Per / month</p>
-          </div>
-          <div>
-            <p>Only 2 Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
-
-          <button type="button" class="order-now">Order Now</button>
-        </div>
-        <div>
-          <h3 class="tile-card">Standard</h3>
-          <p class="card-name">Brief price description</p>
-          <div>
-            <span class="price-value">5</span><span class="currency">$</span>
-            <p>Per / month</p>
-          </div>
-          <div>
-            <p>5+ Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
-
-          <button type="button" class="order-now-whait">Order Now</button>
-        </div>
-        <div>
-          <h3 class="tile-card">Premium</h3>
-          <p class="card-name">Brief price description</p>
-          <div>
-            <span class="price-value">10</span><span class="currency">$</span>
-
-            <p>Per / month</p>
-          </div>
-          <div>
-            <p>10+ Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
-
-          <button type="button" class="order-now">Order Now</button>
+        <div class="news__container">
+          <ul class="news__list">
+            <li class="news__list-item">
+              <img src="./images/image1.png" alt="working for laptops" />
+              <p class="news__subtitile-list">
+                By <span class="bild-subtitle">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="news__title-list">
+                Increasing Prosperity With Positive Thinking
+              </h3>
+            </li>
+            <li class="news__list-item">
+              <img src="./images/image2.png" alt="" />
+              <p class="news__subtitile-list">
+                By <span class="bild-subtitle">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="lable-news__title-list">
+                Motivation Is The First Step To Success
+              </h3>
+            </li>
+            <li class="news__list-item">
+              <img src="./images/image3.png" alt="" />
+              <p class="news__subtitile-list">
+                By <span class="bild-subtitle">Wahid Ari</span> | 03 March 2019
+              </p>
+              <h3 class="news__title-list">
+                Success Steps For Your Personal Or Business
+              </h3>
+            </li>
+          </ul>
         </div>
       </section>
-      <!-- section-8 -->
-      <!-- section-9 -->
-      <section class="section-9">
-        <h2 class="text-align-center">What Clients Say</h2>
-        <p class="text-under-ts9">
+      <!-- section-news -->
+      <!-- section-pricing -->
+      <section class="pricing">
+        <h2 class="pricing__title">Price Table</h2>
+        <p class="pricing__description">We offer competitive price</p>
+        <div class="pricing__container">
+          <div class="Free">
+            <h3 class="Free__title">Free</h3>
+            <p class="Free__description">Brief price description</p>
+            <div class="">
+              <span class="price-value">0</span>
+              <span class="currency">$</span>
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">Only 2 Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
+
+            <button type="button" class="order-now">Order Now</button>
+          </div>
+          <div>
+            <h3 class="standard__title">Standard</h3>
+            <p class="standard__description">Brief price description</p>
+            <div>
+              <span class="price-value">5</span>
+              <span class="currency">$</span>
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">5+ Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
+
+            <button type="button" class="order-now-whait">Order Now</button>
+          </div>
+          <div>
+            <h3 class="premium__title">Premium</h3>
+            <p class="premium__description">Brief price description</p>
+            <div>
+              <span class="price-value">10</span>
+              <span class="currency">$</span>
+
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">10+ Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
+
+            <button type="button" class="order-now">Order Now</button>
+          </div>
+        </div>
+      </section>
+      <!-- section-pricing -->
+      <!-- section-feedback -->
+      <section class="feedback">
+        <h2 class="feedback__title">What Clients Say</h2>
+        <p class="feedback__description">
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
-        <ul class="opinien-list">
-          <li class="opinien-item">
-            <ul class="stars-box">
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li>
-                <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
-              </li>
-            </ul>
-            <p class="opinien">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-            <div>
-              <img src="./images/Ellipse1.png" alt="pickture with Designer" />
-              <h4 class="green-title">Wahid Ari</h4>
-              <h5>Designer</h5>
-            </div>
-          </li>
-          <li class="opinien-item">
-            <ul class="stars-box">
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li>
-                <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
-              </li>
-            </ul>
-            <p class="opinien">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-            <div>
-              <img src="./images/Ellipse2.png" alt="pickture with Designer" />
-              <h4 class="green-title">Wahid Ari</h4>
-              <h5>Designer</h5>
-            </div>
-          </li>
-          <li class="opinien-item">
-            <ul class="stars-box">
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
-              <li>
-                <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
-              </li>
-            </ul>
-            <p class="opinien">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-            <div>
-              <img src="./images/Ellipse3.png" alt="pickture with Designer" />
-              <h4 class="green-title">Wahid Ari</h4>
-              <h5>Designer</h5>
-            </div>
-          </li>
-        </ul>
+        <div class="opoiniens__container">
+          <ul class="opinien-list">
+            <li class="opinien-item">
+              <ul class="stars-box">
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li>
+                  <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
+                </li>
+              </ul>
+              <p class="opinien__text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="user">
+                <img
+                  src="./images/Ellipse1.png"
+                  alt="pickture with Designer"
+                  class="user__picture"
+                />
+                <h4 class="user__name">Wahid Ari</h4>
+                <h5 class="user__subname">Designer</h5>
+              </div>
+            </li>
+            <li class="opinien-item">
+              <ul class="stars-box">
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li>
+                  <img
+                    src="./icons/stars/Vector-4.svg"
+                    alt="empty stars"
+                    class="user__picture"
+                  />
+                </li>
+              </ul>
+              <p class="opinien__text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="user">
+                <img
+                  src="./images/Ellipse2.png"
+                  alt="pickture with Designer"
+                  class="user__picture"
+                />
+                <h4 class="user__name">Wahid Ari</h4>
+                <h5 class="user__subname">Designer</h5>
+              </div>
+            </li>
+            <li class="opinien-item">
+              <ul class="stars-box">
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li><img src="./icons/stars/Vector.svg" alt="full stars" /></li>
+                <li>
+                  <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
+                </li>
+              </ul>
+              <p class="opinien__text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="user">
+                <img src="./images/Ellipse3.png" alt="pickture with Designer" />
+                <h4 class="user__name">Wahid Ari</h4>
+                <h5 class="user__subname">Designer</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <!-- section-9 -->
-      <!-- section-10 -->
-      <section class="section-10">
-        <p class="title-s10">
+      <!-- section-feedback -->
+      <!-- section-promo -->
+      <section class="promo">
+        <p class="promo__title">
           Join 100 Compannies who boost their business with Product
         </p>
-        <button type="button">Get This</button
-        ><img src="./images/graphics.png" alt="web pages" />
+        <button type="button" class="promo__btn">Get This</button
+        ><img src="./images/graphics.png" alt="web pages" class="promo__page" />
       </section>
-      <!-- section-10 -->
+      <!-- section-promo -->
     </main>
     <!-- main -->
     <!-- footer -->
-    <footer>
-      <div class="footer-box">
-        <div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
           <a href="./index.html" class="logo"
             ><img src="./icons/logo.svg" alt="logo" />Product</a
           >
-          <div>
+          <div class="social__container">
             <a href=""
               ><img src="./icons/instagram.svg" alt="icon instagram" /></a
             ><a href="">
@@ -394,28 +455,31 @@
             /></a>
           </div>
         </div>
-        <div>
-          <div class="title-footer-list-1">Resource</div>
+        <div class="footer__links">
+          <div class="footer__section">
+            <div class="footer__title"><p>Resource</p></div>
 
-          <a href="">About Us</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-          <a href="">FAQ</a>
-        </div>
-        <div>
-          <div class="title-footer-list-2">Legal Stuff</div>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">FAQ</a>
+          </div>
 
-          <a href="">Disclaimer</a>
-          <a href="">Financing</a>
-          <a href="">Privacy Policy</a>
+          <div class="footer__section">
+            <div class="footer__title"><p>Legal Stuff</p></div>
+
+            <a href="">Disclaimer</a>
+            <a href="">Financing</a>
+            <a href="">Privacy Policy</a>
+          </div>
         </div>
-        <div class="form">
-          <p class="form-title">
+        <div class="footer__form">
+          <p class="footer__form-title">
             knowing you're always on the best energy deal.
           </p>
           <form action="">
-            <div class="input-wrapper">
-              <span class="icon"
+            <div class="footer__input-wrapper">
+              <span class="input__icon"
                 ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
               /></span>
               <input

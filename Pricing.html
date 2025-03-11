@@ -13,11 +13,11 @@
 
   <body>
     <!-- header -->
-    <header>
+    <header class="header">
       <a href="./index.html" class="logo"
         ><img src="./icons/logo.svg" alt="" />Product</a
       >
-      <nav class="navbsr">
+      <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item"><a href="./index.html">Product</a></li>
           <li class="navbar-item"><a href="./Pricing.html">Pricing</a></li>
@@ -34,118 +34,127 @@
     <!-- main -->
 
     <main>
-      <!-- section-1 -->
-      <section class="pricing-sec-1">
-        <h1>PRICING</h1>
-        <h2 class="text-align-center">Price Table</h2>
-        <p class="text-under-ts8">We offer competitive price</p>
-        <div>
-          <h3 class="tile-card">Free</h3>
-          <p class="card-name">Brief price description</p>
-          <div class="">
-            <span class="price-value">0</span>
-            <span class="currency">$</span>
-            <p>Per / month</p>
-          </div>
-          <div>
-            <p>Only 2 Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
+      <!-- section-pricing -->
+      <section class="pricing">
+        <h1 class="pricing__title">PRICING</h1>
+        <h2 class="pricing__subtitle">Price Table</h2>
+        <p class="pricing__description">We offer competitive price</p>
+        <div class="pricing__container">
+          <div class="Free">
+            <h3 class="Free__title">Free</h3>
+            <p class="Free__description">Brief price description</p>
+            <div class="">
+              <span class="price-value">0</span>
+              <span class="currency">$</span>
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">Only 2 Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
 
-          <button type="button" class="order-now">Order Now</button>
-        </div>
-        <div>
-          <h3 class="tile-card">Standard</h3>
-          <p class="card-name">Brief price description</p>
-          <div>
-            <span class="price-value">5</span><span class="currency">$</span>
-            <p>Per / month</p>
+            <button type="button" class="order-now">Order Now</button>
           </div>
           <div>
-            <p>5+ Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
+            <h3 class="standard__title">Standard</h3>
+            <p class="standard__description">Brief price description</p>
+            <div>
+              <span class="price-value">5</span>
+              <span class="currency">$</span>
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">5+ Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
 
-          <button type="button" class="order-now-whait">Order Now</button>
-        </div>
-        <div>
-          <h3 class="tile-card">Premium</h3>
-          <p class="card-name">Brief price description</p>
-          <div>
-            <span class="price-value">10</span><span class="currency">$</span>
-
-            <p>Per / month</p>
+            <button type="button" class="order-now-whait">Order Now</button>
           </div>
           <div>
-            <p>10+ Operators</p>
-            <p>Notifications</p>
-            <p>Landing Pages</p>
-          </div>
+            <h3 class="premium__title">Premium</h3>
+            <p class="premium__description">Brief price description</p>
+            <div>
+              <span class="price-value">10</span>
+              <span class="currency">$</span>
 
-          <button type="button" class="order-now">Order Now</button>
+              <p class="period">Per / month</p>
+            </div>
+            <div>
+              <p class="definitions">10+ Operators</p>
+              <p class="definitions">Notifications</p>
+              <p class="definitions">Landing Pages</p>
+            </div>
+
+            <button type="button" class="order-now">Order Now</button>
+          </div>
         </div>
       </section>
-      <!-- section-1 -->
+      <!-- section-pricing -->
 
-      <!-- section-2 -->
-      <section class="pricing-sec-2">
-        <h2 class="pricing-title-s2">
-          <span>ENTERPRISE</span><br />
+      <!-- section-enterprise -->
+      <section class="enterprise">
+        <h2 class="enterprise__title">
+          <span class="enterprise__subtitle">ENTERPRISE</span><br />
           Are you interested in a custom-tailored plan?
         </h2>
-        <p class="text-under-pricing-ts">
+        <p class="enterprise__description">
           Product is a set of advanced features for really large teams with
           projects.
         </p>
-        <button type="button">Get in touch with us</button>
+        <button type="button" class="enterprise__btn">
+          Get in touch with us
+        </button>
       </section>
-      <!-- section-2 -->
-      <!-- section-3 -->
-      <section class="pricing-sec-3">
-        <h2 class="pricing-title-s3">
+      <!-- section-enterprise -->
+      <!-- section-success -->
+      <section class="success">
+        <h2 class="success__title">
           Product is being used with great effects alongside:
         </h2>
-        <div>
-          <img src="./images/amico.png" alt="divices" />
-          <div>
+        <div class="success__container">
+          <img src="./images/amico.png" alt="divices" class="success__page" />
+          <div class="container__content">
             <ul class="name-product">
               <il
-                ><div>
+                ><div class="title__box">
                   <img
                     src="./icons/FeatureIconwithcircle.svg"
                     alt="Enterpreneur"
+                    class="title-icon"
                   />
-                  <h3>Enterpreneur</h3>
+                  <h3 class="box__title">Enterpreneur</h3>
                 </div>
-                <p>
+                <p class="box__text">
                   Product is a great way to help medium and samall enterprise
                   owners achieve their goals
                 </p>
               </il>
               <il>
-                <div>
+                <div class="title__box">
                   <img
                     src="./icons/FeatureIconwithcircle1.svg"
                     alt="Accountants"
+                    class="title-icon"
                   />
-                  <h3>Accountants</h3>
+                  <h3 class="box__title">Accountants</h3>
                 </div>
-                <p>
+                <p class="box__text">
                   Whether you are working on contract with clients, or on other
                   key accounting documents, Product is for you
                 </p>
               </il>
               <il>
-                <div>
+                <div class="title__box">
                   <img
                     src="./icons/FeatureIconwithcircle3.svg"
                     alt="Universities"
+                    class="title-icon"
                   />
-                  <h3>Universities</h3>
+                  <h3 class="box__title">Universities</h3>
                 </div>
-                <p>
+                <p class="box__text">
                   Organize university projects and have documents easily graded
                   online with Product
                 </p>
@@ -154,15 +163,15 @@
           </div>
         </div>
       </section>
-      <!-- section-3 -->
+      <!-- section-success-->
 
-      <!-- section-4 -->
-      <section class="pricing-sec-4">
-        <h2 class="pricing-title-s4">Frequently asked question</h2>
-        <p class="text-under-pricing-ts">
+      <!-- section-faq -->
+      <section class="faq">
+        <h2 class="faq__title">Frequently asked question</h2>
+        <p class="faq__description">
           Something is not clear? You need help? Check our FAQ section
         </p>
-        <div>
+        <div class="containet__faq">
           <details>
             <summary>What are my payment option?</summary>
           </details>
@@ -182,27 +191,27 @@
           </details>
         </div>
       </section>
-      <!-- section-4 -->
-      <!-- section-5 -->
-      <section class="section-10">
-        <p class="title-s10">
+      <!-- section-faq -->
+      <!-- section-promo -->
+      <section class="promo">
+        <p class="promo__title">
           Join 100 Compannies who boost their business with Product
         </p>
-        <button type="button">Get This</button
-        ><img src="./images/graphics.png" alt="web pages" />
+        <button type="button" class="promo__btn">Get This</button
+        ><img src="./images/graphics.png" alt="web pages" class="promo__page" />
       </section>
-      <!-- section-5 -->
+      <!-- section-promo -->
     </main>
     <!-- main -->
     <!-- main -->
     <!-- footer -->
-    <footer>
-      <div class="footer-box">
-        <div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
           <a href="./index.html" class="logo"
             ><img src="./icons/logo.svg" alt="logo" />Product</a
           >
-          <div>
+          <div class="social__container">
             <a href=""
               ><img src="./icons/instagram.svg" alt="icon instagram" /></a
             ><a href="">
@@ -212,28 +221,31 @@
             /></a>
           </div>
         </div>
-        <div>
-          <div class="title-footer-list-1">Resource</div>
+        <div class="footer__links">
+          <div class="footer__section">
+            <div class="footer__title"><p>Resource</p></div>
 
-          <a href="">About Us</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-          <a href="">FAQ</a>
-        </div>
-        <div>
-          <div class="title-footer-list-2">Legal Stuff</div>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">FAQ</a>
+          </div>
 
-          <a href="">Disclaimer</a>
-          <a href="">Financing</a>
-          <a href="">Privacy Policy</a>
+          <div class="footer__section">
+            <div class="footer__title"><p>Legal Stuff</p></div>
+
+            <a href="">Disclaimer</a>
+            <a href="">Financing</a>
+            <a href="">Privacy Policy</a>
+          </div>
         </div>
-        <div class="form">
-          <p class="form-title">
+        <div class="footer__form">
+          <p class="footer__form-title">
             knowing you're always on the best energy deal.
           </p>
           <form action="">
-            <div class="input-wrapper">
-              <span class="icon"
+            <div class="footer__input-wrapper">
+              <span class="input__icon"
                 ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
               /></span>
               <input
