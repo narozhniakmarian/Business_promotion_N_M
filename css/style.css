@@ -36,7 +36,9 @@
 
  /* *** */
  /* .logo */
- .logo-box {}
+ .logo-box {
+     display: inline-block;
+ }
 
  .logo {
      display: flex;
@@ -68,34 +70,35 @@
  /* header */
  .header {
      display: block;
+     align-items: center;
+     max-width: 1400px;
+     height: 80px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
  }
 
  .head-container {
      display: flex;
-     align-items: center;
-     max-width: 1440px;
-     height: 80px;
-     padding: 0 146px;
- }
-
- .header .head-container {
-     display: flex;
+     gap: 236px;
      justify-content: space-between;
      align-items: center;
-     flex-flow: row wrap;
+     height: 80px;
+     margin: 0;
+     padding: 0 146px;
+     box-sizing: border-box;
  }
 
- .navigation {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 76px;
- }
+
 
  .navbar {
      display: flex;
      justify-content: start;
      align-items: center;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
  }
 
  .navbar-list {
@@ -106,6 +109,22 @@
      padding: 0;
      margin: 26px 0;
 
+ }
+
+ .nav-wrap {
+     display: inline-block;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navigation {
+     display: flex;
+     gap: 72px;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
  }
 
  .navbar-item {
@@ -346,3 +365,13 @@
      font-size: 16px;
      outline: none;
  }
+
+
+
+
+
+
+
+
+
+ /*  */
