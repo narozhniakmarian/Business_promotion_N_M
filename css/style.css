@@ -1,8 +1,6 @@
- /* *** */
+ /* all */
 
- * {
-     box-sizing: border-box;
- }
+
 
  body {
      font-family: "Poppins", sans-serif;
@@ -82,7 +80,6 @@
 
  .header .head-container {
      display: flex;
-     gap: 236px;
      justify-content: space-between;
      align-items: center;
      flex-flow: row wrap;
