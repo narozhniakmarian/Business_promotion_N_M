@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Promotion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -14,21 +20,36 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a href="./index.html" class="logo"
-        ><img src="./icons/logo.svg" alt="" />Product</a
-      >
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a href="./index.html">Product</a></li>
-          <li class="navbar-item"><a href="./Pricing.html">Pricing</a></li>
-          <li class="navbar-item"><a href="./Customers.html">Customers</a></li>
-          <li class="navbar-item"><a href="">Resources</a></li>
-        </ul>
-      </nav>
-      <ul class="sign">
-        <li><button type="button" class="sign-in">Sign In</button></li>
-        <li><button type="button" class="sign-up">Sign Uo</button></li>
-      </ul>
+      <div class="head-container">
+        <div class="logo-box">
+          <a href="./index.html" class="logo"
+            ><img
+              src="./icons/logo.svg"
+              alt="logo"
+              class="logo-img"
+            />Product</a
+          >
+        </div>
+        <div class="navigation">
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="./index.html">Product</a></li>
+              <li class="navbar-item">
+                <a href="./Pricing.html">Pricing</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./Customers.html">Customers</a>
+              </li>
+              <li class="navbar-item"><a href="">Resources</a></li>
+            </ul>
+          </nav>
+
+          <ul class="sign">
+            <li><button type="button" class="sign-in">Sign In</button></li>
+            <li><button type="button" class="sign-up">Sign Uo</button></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- header -->
     <!-- main -->
@@ -36,27 +57,47 @@
     <main class="wrapper">
       <!-- section-hero -->
       <section class="hero">
-        <h1 class="hero_title">Work at the speed of thought</h1>
-        <p class="hero_description">
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul class="hero_buttons">
-          <li>
-            <button type="button" class="get-started">Get started</button>
-          </li>
-          <li>
-            <button type="button" class="watch-the-video">
-              Watch the Video
-            </button>
-          </li>
-        </ul>
-        <img
-          src="./images/hero-img.svg"
-          alt="the piople watch divices"
-          width="610"
-          class="hero__image"
-        />
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-description">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-buttons">
+              <li>
+                <button type="button" class="get-started">Get started</button>
+              </li>
+              <li>
+                <button type="button" class="watch-the-video">
+                  <svg
+                    width="16"
+                    height="18"
+                    viewBox="0 0 16 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="watch-svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.6744 7.25119C16.0472 8.01295 16.0472 9.98705 14.6744 10.7488L2.77489 17.3518C1.44185 18.0914 -0.195505 17.1275 -0.195505 15.6029V2.39705C-0.195505 0.872535 1.44185 -0.0914478 2.77489 0.648247L14.6744 7.25119Z"
+                      fill="#02897A"
+                    />
+                  </svg>
+
+                  Watch the Video
+                </button>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/hero-img.svg"
+            alt="the piople watch divices"
+            width="610"
+            class="hero__image"
+          />
+        </div>
       </section>
       <!-- section-hero -->
       <!-- section-features -->
