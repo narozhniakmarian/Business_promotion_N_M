@@ -201,6 +201,13 @@
      text-decoration: none;
      padding: 5px;
      border: none;
+     cursor: pointer;
+     transition: 0.2s ease;
+ }
+
+ .watch-the-video:hover,
+ .watch-the-video:focus {
+     color: crimson;
  }
 
  .watch-the-video::after {
@@ -280,6 +287,14 @@
      background: #02897a;
      border: none;
      padding: 14px 32px;
+     cursor: pointer;
+     transition: 0.2s ease;
+ }
+
+ .sigb-up-now:hover,
+ .sigb-up-now:focus {
+     color: #02897A;
+     background-color: coral;
  }
 
  /* management */
@@ -507,9 +522,10 @@
 
  .psection-title {
      font-weight: 700;
-     font-size: 34px;
-     color: #22343d;
+     font-size: 40px;
      text-align: center;
+     color: #22343d;
+     margin-bottom: 16px;
  }
 
  .ppricing {
@@ -517,6 +533,7 @@
      font-size: 16px;
      color: #22343d;
      text-align: center;
+     margin-bottom: 50px;
  }
 
  .offer-price {
@@ -753,7 +770,6 @@
      margin: 10px 0 100px 0;
  }
 
- .opoiniens-container {}
 
  .opinien-list {
      display: flex;
@@ -843,6 +859,44 @@
      border-radius: 8px;
      border: none;
      padding: 10px 34px;
+     cursor: pointer;
+     transition: 0.2s ease;
+ }
+
+ .promo-btn:hover,
+ .promo-btn:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
+ }
+
+ .form-btn:hover,
+ .form-btn:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
+ }
+
+ .contact-our-expert:hover,
+ .contact-our-expert:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
+ }
+
+ .order-now:hover,
+ .order-now:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
+ }
+
+ .get-started:hover,
+ .get-started:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
+ }
+
+ .order-now-whait:hover,
+ .order-now-whait:focus {
+     color: #02897A;
+     background-color: rgb(217, 147, 18);
  }
 
  /* footer */
@@ -970,14 +1024,389 @@
  }
 
 
+
+ /* ===================================================
+=                  Customers                    =*/
+ /* ourclients */
+ .ourclients {
+     padding: 100px 0 110px 0;
+ }
+
+ .ourclients-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+ .ourclients-logos {
+     display: flex;
+     flex-direction: row;
+     gap: 64px;
+ }
+
+ .ourclients-logos a {
+     margin: 16px 0;
+ }
+
+ /* ourclients */
+
+ /* costomers-features */
+ .costomers-features {
+     padding-top: 24px;
+     padding-bottom: 68px;
+     background: #f5f5f5;
+ }
+
+ .costomers-feature-list {
+     display: flex;
+     gap: 30px;
+     margin-top: 50px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .costomers-feature-item {
+     border: 1px solid #dedede;
+     border-radius: 10px;
+     width: 350px;
+     height: 305px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+     padding: 0 28px;
+ }
+
+ .costomers-feature-item img {
+     width: 50px;
+     height: 50px;
+     margin: 32px 0;
+ }
+
+ .features-item-title {
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 137%;
+     letter-spacing: 0em;
+     text-align: center;
+     color: #22343d;
+     margin-bottom: 16px;
+ }
+
+ .features-item-description {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 169%;
+     letter-spacing: 0.01em;
+     text-align: center;
+     color: #22343d;
+     margin-bottom: 34px;
+ }
+
+ /* costomers-features */
+ /* group */
+
+
+ .group {
+     padding: 100px 0;
+ }
+
+ .group-list {
+     margin-top: 72px;
+     margin-bottom: 78px;
+     display: flex;
+     flex-direction: column;
+     gap: 100px;
+ }
+
+ .group-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .group-syep-box {
+     display: flex;
+     gap: 90px;
+     align-items: center;
+ }
+
+ .ctep-contant {
+     max-width: 438px;
+ }
+
+ .step-title {
+     font-weight: 600;
+     font-size: 24px;
+
+     color: #22343d;
+     margin-bottom: 16px;
+ }
+
+ .step {
+     display: block;
+     font-weight: 500;
+     font-size: 20px;
+
+     color: #22343d;
+     margin-bottom: 16px;
+ }
+
+ .step-text {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 175%;
+     color: #22343d;
+ }
+
+ /* group */
+ /* comparison */
+
+
+
+ .comparison {
+     padding-top: 34px;
+     padding-bottom: 44px;
+ }
+
+ .comparison-title {
+     width: 538px;
+     text-align: center;
+     margin-bottom: 90px;
+ }
+
+ .comparison-flex {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .comparison-container {
+     display: flex;
+     gap: 190px;
+ }
+
+ .container-busennes,
+ .container-enterprise {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .busieness-icon,
+ .enterprise-icon {
+     width: 60px;
+     height: 60px;
+     margin-bottom: 72px;
+ }
+
+ .comparison-container-title {
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 117%;
+     color: #000;
+     margin-bottom: 16px;
+ }
+
+ .comparison-description {
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 178%;
+     text-align: center;
+     color: #22343d;
+ }
+
+ .comparison-text {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 175%;
+     color: #000;
+ }
+
+
+
+
+ /* comparison */
+ /* ===================================================
+=                   Customers                    =*/
+ /* ===================================================
+=                   pricing                    =*/
+
+ /* pricing */
+ .pric {
+     margin-bottom: 150px;
+ }
+
+ .pricing-title {
+     font-weight: 600;
+     font-size: 24px;
+     color: #22343d;
+     margin-bottom: 32px;
+ }
+
+ /* pricing */
+ /* anterprise */
+ .enterprise {
+     padding-top: 54px;
+     padding-bottom: 50px;
+     background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+ }
+
+
+ .enterprise-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .enterprise-subtitle {
+     display: block;
+     font-weight: 600;
+     font-size: 24px;
+     color: #22343d;
+     margin-bottom: 16px;
+ }
+
+ .enterprise-title {
+     font-weight: 700;
+     font-size: 34px;
+     color: #22343d;
+     margin-bottom: 8px;
+ }
+
+ .enterprise-description {
+     font-weight: 400;
+     font-size: 18px;
+     color: #22343d;
+     margin-bottom: 32px;
+ }
+
+
+ /* anterprise */
+
+ /* success */
+
+ .container-success {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .success-title {
+     font-weight: 700;
+     font-size: 34px;
+     color: #22343d;
+     margin-bottom: 80px;
+ }
+
+ .success-container {
+     display: flex;
+     gap: 60px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .success-page {
+     width: 528px;
+     height: 392px;
+ }
+
+ .container-content {
+     max-width: 544px;
+ }
+
+ .name-product {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .title-box {
+     display: flex;
+     gap: 14px;
+     align-items: center;
+     margin-bottom: 22px;
+ }
+
+ .box-title {
+     font-weight: 600;
+     font-size: 24px;
+     text-align: center;
+     color: #22343d;
+ }
+
+ .box-text {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 175%;
+     color: #22343d;
+     margin-bottom: 32px;
+ }
+
+ /* success */
+
+
+ /* faq */
+
+
+
+
+
+ .faq {
+     margin-bottom: 150px;
+ }
+
+
+ .faq-title {
+     display: block;
+     font-weight: 700;
+     font-size: 34px;
+     color: #22343d;
+     margin-bottom: 8px;
+     text-align: center;
+
+ }
+
+ .faq-description {
+     font-weight: 400;
+     font-size: 18px;
+     color: #22343d;
+     margin-bottom: 50px;
+     text-align: center;
+ }
+
+ .containet-faq {
+     margin: 0 auto;
+     max-width: 910px;
+ }
+
+
+ /* faq */
+
  /* details */
  summary {
+     font-weight: 500;
+     font-size: 18px;
+     color: #22343d;
      cursor: pointer;
      list-style: none;
      /* Прибирає стандартний трикутник */
      display: flex;
      align-items: center;
      margin-bottom: 12px;
+ }
+
+ .sumopen {
+     font-weight: 400;
+     font-size: 16px;
+     color: #22343d;
  }
 
  summary::-webkit-details-marker {
@@ -1010,3 +1439,33 @@
      content: "-";
 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ===================================================
+=                   pricing                    =*/
