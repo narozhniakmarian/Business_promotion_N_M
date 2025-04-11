@@ -26,11 +26,10 @@
       <div class="container header-container">
         <div class="logo-box">
           <a href="./index.html" class="logo"
-            ><img
-              src="./icons/logo.svg"
-              alt="logo"
-              class="logo-img"
-            />Product</a
+            ><span class="span-logo"
+              ><svg class="logo-svg" width="40" height="36">
+                <use href="images/color_icons.svg#icon-logo"></use></svg></span
+            >Product</a
           >
         </div>
 
@@ -61,49 +60,65 @@
     <main class="wrapper">
       <!-- section-hero -->
       <section class="hero">
-        <div class="container">
-          <div class="hero-container">
-            <div class="hero-content">
-              <h1 class="hero-title">Work at the speed of thought</h1>
-              <p class="hero-description">
-                Tools, tutorials, design and innovation experts, all in one
-                place! The most intuitive way to imagine your next user
-                experience.
-              </p>
-              <ul class="hero-buttons">
-                <li>
-                  <button type="button" class="get-started">Get started</button>
-                </li>
-                <li>
-                  <button type="button" class="watch-the-video">
-                    <svg
-                      width="16"
-                      height="18"
-                      viewBox="0 0 16 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="watch-svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M14.6744 7.25119C16.0472 8.01295 16.0472 9.98705 14.6744 10.7488L2.77489 17.3518C1.44185 18.0914 -0.195505 17.1275 -0.195505 15.6029V2.39705C-0.195505 0.872535 1.44185 -0.0914478 2.77489 0.648247L14.6744 7.25119Z"
-                        fill="#02897A"
-                      />
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-description">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-buttons">
+              <li>
+                <button type="button" class="get-started">Get started</button>
+              </li>
+              <li>
+                <button type="button" class="watch-the-video">
+                  <div class="icon-play">
+                    <svg class="play" width="20" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-triangle"
+                      ></use>
                     </svg>
+                  </div>
 
-                    Watch the Video
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <img
-              src="./images/hero-img.svg"
-              alt="the piople watch divices"
-              width="610"
-              class="hero-image"
-            />
+                  Watch the Video
+                </button>
+              </li>
+            </ul>
           </div>
+          <picture class="hero-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/hero-img.png      1x,
+                ./images/section/hero-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/hero-img.png      1x,
+                ./images/section/hero-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/hero-img.png    1x,
+                ./images/section/section_mob/hero-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="./images/section/hero-img.png"
+              alt="Banking App"
+              width="610"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <!-- section-hero -->
@@ -113,7 +128,11 @@
           <h2 class="features-title">Product was Built Specifically for You</h2>
           <ul class="features-list">
             <li class="features-item">
-              <img src="./icons/icon-1.svg" alt="cursor" />
+              <div class="icon-svg cursor">
+                <svg class="icon-3" width="12" height="18">
+                  <use href="./images/fill_none_icons.svg#icon-cursor"></use>
+                </svg>
+              </div>
               <div class="info-box">
                 <h3 class="ffeatures-item-title">First click tests</h3>
                 <p class="description">
@@ -122,7 +141,11 @@
               </div>
             </li>
             <li class="features-item">
-              <img src="./icons/icon-2.svg" alt="Design surveys" />
+              <div class="icon-svg vive-line">
+                <svg class="icon-3" width="18" height="18">
+                  <use href="./images/fill_none_icons.svg#icon-vive_line"></use>
+                </svg>
+              </div>
               <div class="info-box">
                 <h3 class="ffeatures-item-title">Design surveys</h3>
                 <p class="description">
@@ -131,7 +154,11 @@
               </div>
             </li>
             <li class="features-item">
-              <img src="./icons/icon-3.svg" alt="Preference tests" />
+              <div class="icon-svg hard">
+                <svg class="icon-3" width="16" height="18">
+                  <use href="./images/fill_none_icons.svg#icon-hard"></use>
+                </svg>
+              </div>
               <div class="info-box">
                 <h3 class="ffeatures-item-title">Preference tests</h3>
                 <p class="description">
@@ -140,7 +167,11 @@
               </div>
             </li>
             <li class="features-item">
-              <img src="./icons/icon-ckloc.svg" alt="cklok" />
+              <div class="icon-svg oclock">
+                <svg class="icon-3" width="14" height="18">
+                  <use href="./images/fill_none_icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <div class="info-box">
                 <h3 class="ffeatures-item-title">Five second tests</h3>
                 <p class="description">
@@ -155,171 +186,282 @@
       <!-- features-section -->
       <!-- section-Management -->
       <section class="management">
-        <div class="container">
-          <div class="management-container">
-            <div class="conten-box">
-              <h2 class="section-title">
-                <span class="sp-subtitle">Effortless Validation for</span>
-                <br />Management
-              </h2>
+        <div class="container management-container">
+          <div class="conten-box">
+            <h2 class="section-title">
+              <span class="sp-subtitle">Effortless Validation for</span>
+              <br />Management
+            </h2>
+            <p class="description">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <div class="accesory-content">
+              <h3 class="subtitle">Accessory makers</h3>
               <p class="description">
-                The Myspace page defines the individual, his or her
-                characteristics, traits, personal choices and the overall
-                personality of the person.
+                While most people enjoy casino gambling, sports betting, lottery
+                and bingo playing for the fun
               </p>
-              <div class="accesory-content">
-                <h3 class="subtitle">Accessory makers</h3>
-                <p class="description">
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-              </div>
-              <div class="alterationists">
-                <h3 class="subtitle">Alterationists</h3>
-                <p class="description">
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </div>
             </div>
-
-            <img
-              src="./images/management-img.svg"
-              alt="management"
-              class="alterationists-page"
-            />
+            <div class="alterationists">
+              <h3 class="subtitle">Alterationists</h3>
+              <p class="description">
+                If you are looking for a new way to promote your business that
+                won’t cost you more money,
+              </p>
+            </div>
           </div>
+          <picture class="index-section-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/management-img.png      1x,
+                ./images/section/cmanagement-img2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/management-img.png      1x,
+                ./images/section/management-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/management-img.png    1x,
+                ./images/section/section_mob/management-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="./images/section/management-img.png"
+              alt="Banking App"
+              width="540"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <!-- section-Management -->
       <!-- section-support -->
       <section class="support">
-        <div class="container">
-          <div class="support-container">
+        <div class="container support-container">
+          <picture class="index-section-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/support-img.png      1x,
+                ./images/section/support-img@2x.png 2x
+              "
+              type="image/jpg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/support-img.png      1x,
+                ./images/section/support-img@2x.png 2x
+              "
+              type="image/jpg" />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/support-img.png    1x,
+                ./images/section/section_mob/support-img@2x.png 2x
+              "
+              type="image/jpg" />
             <img
-              src="./images/support-img.svg"
-              alt="laptop"
-              class="support-page"
-            />
-            <div class="content-box">
-              <h2 class="section-title">
-                <span class="sp-subtitle">Easier decision making for</span
-                ><br />Customer Support
-              </h2>
-              <p class="description">
-                The Myspace page defines the individual, his or her
-                characteristics, traits, personal choices and the overall
-                personality of the person.
-              </p>
-              <ul class="support-list">
-                <li class="support-list-item">
-                  <img
-                    src="./icons/icon-6.svg"
-                    alt=""
-                    class="support-list-icon-orange"
-                  />
-                  <p class="description">
-                    Never worry about overpaying for your energy again.
-                  </p>
-                </li>
-                <li class="support-list-item">
-                  <img
-                    src="./icons/icon.svg"
-                    alt=""
-                    class="support-list-icon-red"
-                  />
-                  <p class="description">
-                    We will only switch you to energy companies that we trust
-                    and will treat you right
-                  </p>
-                </li>
-                <li class="support-list-item">
-                  <img
-                    src="./icons/icon-5.svg"
-                    alt=""
-                    class="support-list-icon-blue"
-                  />
-                  <p class="description">
-                    We track the markets daily and know where the savings are.
-                  </p>
-                </li>
-              </ul>
-            </div>
+              class="card-img"
+              src="./images/section/support-img.png"
+              alt="Banking App"
+              width="540"
+              loading="lazy"
+          /></picture>
+          <div class="content-box">
+            <h2 class="section-title">
+              <span class="sp-subtitle">Easier decision making for</span
+              ><br />Customer Support
+            </h2>
+            <p class="description">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <ul class="support-list">
+              <li class="support-list-item">
+                <div class="support-list-icon icon-orande">
+                  <svg class="okk" width="16" height="12">
+                    <use href="images/fill_none_icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="description">
+                  Never worry about overpaying for your energy again.
+                </p>
+              </li>
+              <li class="support-list-item">
+                <div class="support-list-icon icon-red">
+                  <svg class="okk" width="16" height="12">
+                    <use href="images/fill_none_icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="description">
+                  We will only switch you to energy companies that we trust and
+                  will treat you right
+                </p>
+              </li>
+              <li class="support-list-item">
+                <div class="support-list-icon icon-blue">
+                  <svg class="okk" width="16" height="12">
+                    <use href="images/fill_none_icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="description">
+                  We track the markets daily and know where the savings are.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <!-- section-support -->
       <!-- section-collaborative -->
       <section class="collaborative">
-        <div class="container">
-          <div class="collaborative-container">
-            <div class="content-box">
-              <h2 class="section-title">
-                <span class="sp-subtitle">Optimisation for</span
-                ><br />Collaborative
-              </h2>
+        <div class="container collaborative-container">
+          <div class="content-box">
+            <h2 class="section-title">
+              <span class="sp-subtitle">Optimisation for</span
+              ><br />Collaborative
+            </h2>
+            <p class="description">
+              Few would argue that, despite the advancements of feminism over
+              the past three decades, women still face a double standard when it
+              comes to their behavior.
+            </p>
+            <div class="accesory-content">
+              <h3 class="subtitle">Accessory makers</h3>
               <p class="description">
-                Few would argue that, despite the advancements of feminism over
-                the past three decades, women still face a double standard when
-                it comes to their behavior.
+                While most people enjoy casino gambling, sports betting, lottery
+                and bingo playing for the fun
               </p>
-              <div class="accesory-content">
-                <h3 class="subtitle">Accessory makers</h3>
-                <p class="description">
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-              </div>
-              <div class="alterationists">
-                <h3 class="subtitle">Alterationists</h3>
-                <p class="description">
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </div>
             </div>
-            <img
-              src="./images/collaboration-img.svg"
-              alt="callaboration"
-              class="collaborative__page"
-            />
+            <div class="alterationists">
+              <h3 class="subtitle">Alterationists</h3>
+              <p class="description">
+                If you are looking for a new way to promote your business that
+                won’t cost you more money,
+              </p>
+            </div>
           </div>
+          <picture class="index-section-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/collaboration-img.png      1x,
+                ./images/section/collaboration-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/collaboration-img.png      1x,
+                ./images/section/collaboration-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/collaboration-img.png    1x,
+                ./images/section/section_mob/collaboration-img@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="./images/section/collaboration-img.png"
+              alt="Banking App"
+              width="540"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <!-- section-collaborative -->
       <!-- section-staff -->
       <section class="staff">
-        <div class="container">
-          <div class="staff-container">
-            <h2 class="section-title tstaff">Quick & Easy Process</h2>
-            <p class="pstaff description">
-              Do you require some help for your project: Conception workshop,
-              prototyping, marketing strategy, landing page, Ux/UI?
-            </p>
-            <!-- <div class="content-box"> -->
-            <ul class="staff-list">
-              <li class="staff-item">
-                <img src="./images/avatar1.png" alt="" />
-                <p class="commit-quick-list">I can take care of your pitch</p>
-              </li>
-              <li class="staff-item">
-                <p class="commit-quick-list">I can prototype your app</p>
-                <img src="./images/avatar2.png" alt="" />
-              </li>
-              <li class="staff-item">
-                <p class="commit-quick-list">I can take care of your pitch</p>
-                <img src="./images/avatar3.png" alt="" />
-              </li>
-              <li class="staff-item">
-                <img src="./images/avatar4.png" alt="" />
-                <p class="commit-quick-list">I can help marketing strategy</p>
-              </li>
-            </ul>
+        <div class="container staff-container">
+          <h2 class="section-title tstaff">Quick & Easy Process</h2>
+          <p class="pstaff description">
+            Do you require some help for your project: Conception workshop,
+            prototyping, marketing strategy, landing page, Ux/UI?
+          </p>
+          <!-- <div class="content-box"> -->
+          <ul class="staff-list">
+            <li class="staff-item">
+              <img
+                srcset="
+                  ./images/avatar/avatar1.jpg    1x,
+                  ./images/avatar/avatar1@2x.jpg 2x
+                "
+                src="./images/avatar/avatar1.jpg"
+                alt="pickture with Designer"
+                class="staffimg avatar1"
+                width="98"
+                height="98"
+              />
+              <p class="commit-quick-list">I can take care of your pitch</p>
+            </li>
+            <li class="staff-item">
+              <p class="commit-quick-list">I can prototype your app</p>
+              <img
+                srcset="
+                  ./images/avatar/avatar2.jpg    1x,
+                  ./images/avatar/avatar2@2x.jpg 2x
+                "
+                src="./images/avatar/avatar2.jpg"
+                alt="pickture with Designer"
+                class="staffimg avatar2"
+                width="98"
+                height="98"
+              />
+            </li>
+            <li class="staff-item">
+              <p class="commit-quick-list">I can take care of your pitch</p>
+              <img
+                srcset="
+                  ./images/avatar/avatar3.jpg    1x,
+                  ./images/avatar/avatar3@2x.jpg 2x
+                "
+                src="./images/avatar/avatar3.jpg"
+                alt="pickture with Designer"
+                class="staffimg avatar3"
+                width="98"
+                height="98"
+              />
+            </li>
+            <li class="staff-item">
+              <img
+                srcset="
+                  ./images/avatar/avatar4.jpg    1x,
+                  ./images/avatar/avatar4@2x.jpg 2x
+                "
+                src="./images/avatar/avatar4.jpg"
+                alt="pickture with Designer"
+                class="staffimg avatar4"
+                width="98"
+                height="98"
+              />
+              <p class="commit-quick-list">I can help marketing strategy</p>
+            </li>
+          </ul>
 
-            <button type="button" class="contact-our-expert">
-              Contact our expert
-            </button>
-          </div>
+          <button type="button" class="contact-our-expert">
+            Contact our expert
+          </button>
         </div>
       </section>
       <!-- section-staff -->
@@ -334,8 +476,12 @@
           <ul class="news-list">
             <li class="news-card">
               <img
-                src="./images/image1.png"
-                alt="Increasing Prosperity"
+                srcset="
+                  ./images/news/news1.jpg    1x,
+                  ./images/news/news1@2x.jpg 2x
+                "
+                src="./images/news/news1.jpg"
+                alt="pickture with Designer"
                 width="350"
                 height="185"
               />
@@ -351,8 +497,12 @@
             </li>
             <li class="news-card">
               <img
-                src="./images/image2.png"
-                alt="working for laptops"
+                srcset="
+                  ./images/news/news2.jpg    1x,
+                  ./images/news/news2@2x.jpg 2x
+                "
+                src="./images/news/news2.jpg"
+                alt="pickture with Designer"
                 width="350"
                 height="185"
               />
@@ -361,15 +511,19 @@
                   By <span class="bild-subtitle">Wahid Ari</span> | 03 March
                   2019
                 </p>
-                <h3 class="news-card-title-green">
+                <h3 class="news-card-title">
                   Motivation Is The First Step To Success
                 </h3>
               </div>
             </li>
             <li class="news-card">
               <img
-                src="./images/image3.png"
-                alt="fhly house"
+                srcset="
+                  ./images/news/news3.jpg    1x,
+                  ./images/news/news3@2x.jpg 2x
+                "
+                src="./images/news/news3.jpg"
+                alt="pickture with Designer"
                 width="350"
                 height="185"
               />
@@ -389,216 +543,308 @@
       <!-- section-news -->
       <!-- section-pricing -->
       <section class="pricing">
-        <div class="container">
-          <div class="pricing-container">
-            <h2 class="psection-title">Price Table</h2>
-            <p class="ppricing description">We offer competitive price</p>
-            <ul class="offer-price">
-              <li class="price-card">
-                <div class="free">
-                  <h3 class="card-title">Free</h3>
-                  <p class="free-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value">0</span>
-                    <div class="valuesp">
-                      <span class="currency">$</span>
-                      <p class="period">Per / month</p>
-                    </div>
+        <div class="container pricing-container">
+          <h2 class="psection-title">Price Table</h2>
+          <p class="ppricing description">We offer competitive price</p>
+          <ul class="offer-price">
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Free</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">0</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
                   </div>
-                  <div>
-                    <p class="definitions">Only 2 Operators</p>
-                    <p class="definitions">Notifications</p>
-                    <p class="definitions">Landing Pages</p>
-                  </div>
+                </div>
+                <div>
+                  <p class="definitions">Only 2 Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
+                </div>
 
-                  <button type="button" class="order-now">Order Now</button>
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Standard</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">5</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="definitions">5+ Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
+                </div>
+
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Premium</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">10</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="definitions">10+ Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
+                </div>
+
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- section-pricing -->
+      <!-- section-feedback -->
+      <section class="feedback">
+        <div class="container feedback-container">
+          <h2 class="section-title">What Clients Say</h2>
+          <p class="feedbackk description">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+          <div class="opoiniens-container">
+            <ul class="opinien-list">
+              <li class="opinien-item">
+                <ul class="stars-box">
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star-empty"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="opinien-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+                <div class="user">
+                  <img
+                    srcset="
+                      ./images/ellipse/Ellipse1.jpg    1x,
+                      ./images/ellipse/Ellipse1@2x.jpg 2x
+                    "
+                    src="./images/ellipse/Ellipse1.jpg"
+                    alt="pickture with Designer"
+                    width="50"
+                    height="50"
+                  />
+                  <div>
+                    <h4 class="user-name">Wahid Ari</h4>
+                    <p class="user-subname">Designer</p>
+                  </div>
                 </div>
               </li>
-              <li class="price-card-green">
-                <div class="standard">
-                  <h3 class="card-title-standard">Standard</h3>
-                  <p class="standard-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value-standard">5</span>
-                    <div class="valuesp">
-                      <span class="currency-standard">$</span>
-                      <p class="period-standard">Per / month</p>
-                    </div>
-                  </div>
+              <li class="opinien-item">
+                <ul class="stars-box">
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star-empty"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="opinien-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+                <div class="user">
+                  <img
+                    srcset="
+                      ./images/ellipse/Ellipse2.jpg    1x,
+                      ./images/ellipse/Ellipse2@2x.jpg 2x
+                    "
+                    src="./images/ellipse/Ellipse2.jpg"
+                    alt="pickture with Designer"
+                    width="50"
+                    height="50"
+                  />
                   <div>
-                    <p class="definitions-standard">5+ Operators</p>
-                    <p class="definitions-standard">Notifications</p>
-                    <p class="definitions-standard">Landing Pages</p>
+                    <h4 class="user-name">Wahid Ari</h4>
+                    <p class="user-subname">Designer</p>
                   </div>
-
-                  <button type="button" class="order-now-whait">
-                    Order Now
-                  </button>
                 </div>
               </li>
-              <li class="price-card">
-                <div class="premium">
-                  <h3 class="card-title">Premium</h3>
-                  <p class="premium-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value">10</span>
-                    <div class="valuesp">
-                      <span class="currency">$</span>
-                      <p class="period">Per / month</p>
-                    </div>
-                  </div>
+              <li class="opinien-item">
+                <ul class="stars-box">
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star_full"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="full-star" width="18" height="18">
+                      <use
+                        href="./images/fill_none_icons.svg#icon-star-empty"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="opinien-text">
+                  Product helps you see how many more days you need to work to
+                  reach your financial goal.
+                </p>
+                <div class="user">
+                  <img
+                    srcset="
+                      ./images/ellipse/Ellipse3.jpg    1x,
+                      ./images/ellipse/Ellipse3@2x.jpg 2x
+                    "
+                    src="./images/ellipse/Ellipse3.jpg"
+                    alt="pickture with Designer"
+                    width="50"
+                    height="50"
+                  />
                   <div>
-                    <p class="definitions">10+ Operators</p>
-                    <p class="definitions">Notifications</p>
-                    <p class="definitions">Landing Pages</p>
+                    <h4 class="user-name">Wahid Ari</h4>
+                    <p class="user-subname">Designer</p>
                   </div>
-
-                  <button type="button" class="order-now">Order Now</button>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- section-pricing -->
-      <!-- section-feedback -->
-      <section class="feedback">
-        <div class="container">
-          <div class="feedback-container">
-            <h2 class="section-title">What Clients Say</h2>
-            <p class="feedbackk description">
-              Problems trying to resolve the conflict between the two major
-              realms of Classical physics: Newtonian mechanics
-            </p>
-            <div class="opoiniens-container">
-              <ul class="opinien-list">
-                <li class="opinien-item">
-                  <ul class="stars-box">
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
-                    </li>
-                  </ul>
-                  <p class="opinien-text">
-                    Product helps you see how many more days you need to work to
-                    reach your financial goal.
-                  </p>
-                  <div class="user">
-                    <img
-                      src="./images/Ellipse1.png"
-                      alt="pickture with Designer"
-                      class="user-picture"
-                    />
-                    <div>
-                      <h4 class="user-name">Wahid Ari</h4>
-                      <p class="user-subname">Designer</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="opinien-item">
-                  <ul class="stars-box">
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img
-                        src="./icons/stars/Vector-4.svg"
-                        alt="empty stars"
-                        class="user-picture"
-                      />
-                    </li>
-                  </ul>
-                  <p class="opinien-text">
-                    Product helps you see how many more days you need to work to
-                    reach your financial goal.
-                  </p>
-                  <div class="user">
-                    <img
-                      src="./images/Ellipse2.png"
-                      alt="pickture with Designer"
-                      class="user__picture"
-                    />
-                    <div>
-                      <h4 class="user-name">Wahid Ari</h4>
-                      <p class="user-subname">Designer</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="opinien-item">
-                  <ul class="stars-box">
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector.svg" alt="full stars" />
-                    </li>
-                    <li>
-                      <img src="./icons/stars/Vector-4.svg" alt="empty stars" />
-                    </li>
-                  </ul>
-                  <p class="opinien-text">
-                    Product helps you see how many more days you need to work to
-                    reach your financial goal.
-                  </p>
-                  <div class="user">
-                    <img
-                      src="./images/Ellipse3.png"
-                      alt="pickture with Designer"
-                    />
-                    <div>
-                      <h4 class="user-name">Wahid Ari</h4>
-                      <p class="user-subname">Designer</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- section-feedback -->
       <!-- section-promo -->
       <section class="promo">
-        <div class="container">
-          <div class="promo-container">
-            <div class="promo-content">
-              <p class="promo-title">
-                Join 100 Compannies who boost their business with Product
-              </p>
-              <button type="button" class="promo-btn">Get This</button>
-            </div>
-            <img
-              src="./images/graphics.png"
-              alt="web pages"
-              class="promo__page"
-            />
+        <div class="container promo-container">
+          <div class="promo-content">
+            <p class="promo-title">
+              Join 100 Compannies who boost their business with Product
+            </p>
+            <button type="button" class="promo-btn">Get This</button>
           </div>
+          <picture class="promo-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/graphics.png      1x,
+                ./images/section/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/graphics.png      1x,
+                ./images/section/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/graphics.png    1x,
+                ./images/section/section_mob/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="./images/section/graphics.png"
+              alt="Banking App"
+              width="351"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <!-- section-promo -->
@@ -606,64 +852,75 @@
     <!-- main -->
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-logo">
-            <a href="./index.html" class="flogo"
-              ><img src="./icons/logo.svg" alt="logo" />Product</a
-            >
-            <div class="social-container">
-              <a href=""
-                ><img src="./icons/instagram.svg" alt="icon instagram" /></a
-              ><a href="">
-                <img src="./icons/facebook.svg" alt="icon facebook" /></a
-              ><a href="">
-                <img src="./icons/twitter.svg" alt="icon twitter"
-              /></a>
-            </div>
-          </div>
-          <div class="footer-links">
-            <div class="footer-section">
-              <div class="footer-title"><p>Resource</p></div>
-
-              <a href="">About Us</a>
-              <a href="">Blog</a>
-              <a href="">Contact</a>
-              <a href="">FAQ</a>
-            </div>
-
-            <div class="footer-section">
-              <div class="footer-title"><p>Legal Stuff</p></div>
-
-              <a href="">Disclaimer</a>
-              <a href="">Financing</a>
-              <a href="">Privacy Policy</a>
-            </div>
-          </div>
-          <div class="footer-form">
-            <p class="footer-form-title">
-              knowing you're always on the best energy deal.
-            </p>
-            <form action="">
-              <div class="footer-input-wrapper">
-                <span class="input-icon"
-                  ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
-                /></span>
-                <input
-                  id="tel"
-                  placeholder="Enter your phone number"
-                  type="tel"
-                />
-              </div>
-              <button type="button" class="form-btn">Sign up Now</button>
-            </form>
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <a href="./index.html" class="flogo"
+            ><span class="span-logo"
+              ><svg class="logo-svg" width="40" height="36">
+                <use href="images/color_icons.svg#icon-logo"></use></svg></span
+            >Product</a
+          >
+          <div class="social-container">
+            <a href=""
+              ><svg class="soc-icon" width="24" height="24">
+                <use
+                  href="./images/fill_none_icons.svg#icon-instagram"
+                ></use></svg></a
+            ><a href=""
+              ><svg class="soc-icon" width="24" height="24">
+                <use href="./images/fill_none_icons.svg#icon-fb"></use>
+              </svg> </a
+            ><a href=""
+              ><svg class="soc-icon" width="24" height="24">
+                <use href="./images/fill_none_icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </div>
         </div>
-        <div>
-          <p class="bottom-text">
-            Made With Love By Figmaland All Right Reserved
+        <div class="footer-links">
+          <div class="footer-section">
+            <div class="footer-title"><p>Resource</p></div>
+
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">FAQ</a>
+          </div>
+
+          <div class="footer-section">
+            <div class="footer-title"><p>Legal Stuff</p></div>
+
+            <a href="">Disclaimer</a>
+            <a href="">Financing</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-form">
+          <p class="footer-form-title">
+            knowing you're always on the best energy deal.
           </p>
+          <form action="">
+            <div class="footer-input-wrapper">
+              <span class="input-icon"
+                ><svg class="phone-icon" width="24" height="24">
+                  <use
+                    href="./images/fill_none_icons.svg#icon-mobile-screen"
+                  ></use></svg
+              ></span>
+              <input
+                id="tel"
+                placeholder="Enter your phone number"
+                type="tel"
+              />
+            </div>
+            <button type="button" class="form-btn">Sign up Now</button>
+          </form>
         </div>
+      </div>
+      <div>
+        <p class="bottom-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
     </footer>
     <!-- footer -->

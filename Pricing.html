@@ -20,11 +20,10 @@
       <div class="container header-container">
         <div class="logo-box">
           <a href="./index.html" class="logo"
-            ><img
-              src="./icons/logo.svg"
-              alt="logo"
-              class="logo-img"
-            />Product</a
+            ><span class="span-logo"
+              ><svg class="logo-svg" width="40" height="36">
+                <use href="images/color_icons.svg#icon-logo"></use></svg></span
+            >Product</a
           >
         </div>
 
@@ -55,79 +54,75 @@
     <main>
       <!-- section-pricing -->
       <section class="pricing pric">
-        <div class="container">
-          <div class="pricing-container">
-            <h1 class="pricing-title">PRICING</h1>
-            <h2 class="psection-title">Let’s get some real work done here.</h2>
-            <p class="ppricing description">
-              Prodict is your perfect solution for working. Get started now for
-              free
-            </p>
-            <ul class="offer-price">
-              <li class="price-card">
-                <div class="free">
-                  <h3 class="card-title">Free</h3>
-                  <p class="free-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value">0</span>
-                    <div class="valuesp">
-                      <span class="currency">$</span>
-                      <p class="period">Per / month</p>
-                    </div>
+        <div class="container pricing-container">
+          <h1 class="pricing-title">PRICING</h1>
+          <h2 class="psection-title">Let’s get some real work done here.</h2>
+          <p class="ppricing description">
+            Prodict is your perfect solution for working. Get started now for
+            free
+          </p>
+          <ul class="offer-price">
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Free</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">0</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
                   </div>
-                  <div>
-                    <p class="definitions">Only 2 Operators</p>
-                    <p class="definitions">Notifications</p>
-                    <p class="definitions">Landing Pages</p>
-                  </div>
-
-                  <button type="button" class="order-now">Order Now</button>
                 </div>
-              </li>
-              <li class="price-card-green">
-                <div class="standard">
-                  <h3 class="card-title-standard">Standard</h3>
-                  <p class="standard-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value-standard">5</span>
-                    <div class="valuesp">
-                      <span class="currency-standard">$</span>
-                      <p class="period-standard">Per / month</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="definitions-standard">5+ Operators</p>
-                    <p class="definitions-standard">Notifications</p>
-                    <p class="definitions-standard">Landing Pages</p>
-                  </div>
-
-                  <button type="button" class="order-now-whait">
-                    Order Now
-                  </button>
+                <div>
+                  <p class="definitions">Only 2 Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
                 </div>
-              </li>
-              <li class="price-card">
-                <div class="premium">
-                  <h3 class="card-title">Premium</h3>
-                  <p class="premium-description">Brief price description</p>
-                  <div class="value">
-                    <span class="price-value">10</span>
-                    <div class="valuesp">
-                      <span class="currency">$</span>
-                      <p class="period">Per / month</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="definitions">10+ Operators</p>
-                    <p class="definitions">Notifications</p>
-                    <p class="definitions">Landing Pages</p>
-                  </div>
 
-                  <button type="button" class="order-now">Order Now</button>
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Standard</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">5</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
+                  </div>
                 </div>
-              </li>
-            </ul>
-          </div>
+                <div>
+                  <p class="definitions">5+ Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
+                </div>
+
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+            <li class="price-card">
+              <div class="pricing-holder">
+                <h3 class="card-title">Premium</h3>
+                <p class="free-description">Brief price description</p>
+                <div class="value">
+                  <span class="price-value">10</span>
+                  <div class="valuesp">
+                    <span class="currency">$</span>
+                    <p class="period">Per / month</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="definitions">10+ Operators</p>
+                  <p class="definitions">Notifications</p>
+                  <p class="definitions">Landing Pages</p>
+                </div>
+
+                <button type="button" class="order-now">Order Now</button>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- section-pricing -->
@@ -156,16 +151,50 @@
             Product is being used with great effects alongside:
           </h2>
           <div class="success-container">
-            <img src="./images/amico.png" alt="divices" class="success-page" />
+            <picture class="amica-page">
+              <source
+                media="(min-width: 1150px)"
+                srcset="
+                  images/section/amico.png      1x,
+                  ./images/section/amico@2x.png 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  images/section/amico.png      1x,
+                  ./images/section/amico@2x.png 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/section/section_mob/amico.png    1x,
+                  ./images/section/section_mob/amico@2x.png 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="card-img"
+                src="./images/section/amico.png"
+                alt="Banking App"
+                width="528"
+                loading="lazy"
+              />
+            </picture>
             <div class="container-content">
               <ul class="name-product">
                 <il
                   ><div class="title-box">
-                    <img
-                      src="./icons/FeatureIconwithcircle.svg"
-                      alt="Enterpreneur"
-                      class="title-icon"
-                    />
+                    <div class="succes-icon">
+                      <svg class="success-svg" width="24" height="24">
+                        <use
+                          href="./images/color_icons.svg#icon-enterpreneur"
+                        ></use>
+                      </svg>
+                    </div>
                     <h3 class="box-title">Enterpreneur</h3>
                   </div>
                   <p class="box-text">
@@ -175,11 +204,13 @@
                 </il>
                 <il>
                   <div class="title-box">
-                    <img
-                      src="./icons/FeatureIconwithcircle1.svg"
-                      alt="Accountants"
-                      class="title-icon"
-                    />
+                    <div class="succes-icon">
+                      <svg class="success-svg" width="24" height="24">
+                        <use
+                          href="./images/color_icons.svg#icon-accountant"
+                        ></use>
+                      </svg>
+                    </div>
                     <h3 class="box-title">Accountants</h3>
                   </div>
                   <p class="box-text">
@@ -189,11 +220,13 @@
                 </il>
                 <il>
                   <div class="title-box">
-                    <img
-                      src="./icons/FeatureIconwithcircle3.svg"
-                      alt="Universities"
-                      class="title-icon"
-                    />
+                    <div class="succes-icon">
+                      <svg class="success-svg" width="24" height="24">
+                        <use
+                          href="./images/color_icons.svg#icon-universities"
+                        ></use>
+                      </svg>
+                    </div>
                     <h3 class="box-title">Universities</h3>
                   </div>
                   <p class="box-text">
@@ -241,20 +274,46 @@
       <!-- section-faq -->
       <!-- section-promo -->
       <section class="promo">
-        <div class="container">
-          <div class="promo-container">
-            <div class="promo-content">
-              <p class="promo-title">
-                Join 100 Compannies who boost their business with Product
-              </p>
-              <button type="button" class="promo-btn">Get This</button>
-            </div>
-            <img
-              src="./images/graphics.png"
-              alt="web pages"
-              class="promo__page"
-            />
+        <div class="container promo-container">
+          <div class="promo-content">
+            <p class="promo-title">
+              Join 100 Compannies who boost their business with Product
+            </p>
+            <button type="button" class="promo-btn">Get This</button>
           </div>
+          <picture class="promo-page">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                images/section/graphics.png      1x,
+                ./images/section/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/section/graphics.png      1x,
+                ./images/section/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/section/section_mob/graphics.png    1x,
+                ./images/section/section_mob/graphics@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="./images/section/graphics.png"
+              alt="Banking App"
+              width="351"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <!-- section-promo -->
@@ -263,64 +322,65 @@
     <!-- main -->
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-logo">
-            <a href="./index.html" class="flogo"
-              ><img src="./icons/logo.svg" alt="logo" />Product</a
-            >
-            <div class="social-container">
-              <a href=""
-                ><img src="./icons/instagram.svg" alt="icon instagram" /></a
-              ><a href="">
-                <img src="./icons/facebook.svg" alt="icon facebook" /></a
-              ><a href="">
-                <img src="./icons/twitter.svg" alt="icon twitter"
-              /></a>
-            </div>
-          </div>
-          <div class="footer-links">
-            <div class="footer-section">
-              <div class="footer-title"><p>Resource</p></div>
-
-              <a href="">About Us</a>
-              <a href="">Blog</a>
-              <a href="">Contact</a>
-              <a href="">FAQ</a>
-            </div>
-
-            <div class="footer-section">
-              <div class="footer-title"><p>Legal Stuff</p></div>
-
-              <a href="">Disclaimer</a>
-              <a href="">Financing</a>
-              <a href="">Privacy Policy</a>
-            </div>
-          </div>
-          <div class="footer-form">
-            <p class="footer-form-title">
-              knowing you're always on the best energy deal.
-            </p>
-            <form action="">
-              <div class="footer-input-wrapper">
-                <span class="input-icon"
-                  ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
-                /></span>
-                <input
-                  id="tel"
-                  placeholder="Enter your phone number"
-                  type="tel"
-                />
-              </div>
-              <button type="button" class="form-btn">Sign up Now</button>
-            </form>
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <a href="./index.html" class="flogo"
+            ><span class="span-logo"
+              ><svg class="logo-svg" width="40" height="36">
+                <use href="images/color_icons.svg#icon-logo"></use></svg></span
+            >Product</a
+          >
+          <div class="social-container">
+            <a href=""
+              ><img src="./icons/instagram.svg" alt="icon instagram" /></a
+            ><a href="">
+              <img src="./icons/facebook.svg" alt="icon facebook" /></a
+            ><a href="">
+              <img src="./icons/twitter.svg" alt="icon twitter"
+            /></a>
           </div>
         </div>
-        <div>
-          <p class="bottom-text">
-            Made With Love By Figmaland All Right Reserved
+        <div class="footer-links">
+          <div class="footer-section">
+            <div class="footer-title"><p>Resource</p></div>
+
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">FAQ</a>
+          </div>
+
+          <div class="footer-section">
+            <div class="footer-title"><p>Legal Stuff</p></div>
+
+            <a href="">Disclaimer</a>
+            <a href="">Financing</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-form">
+          <p class="footer-form-title">
+            knowing you're always on the best energy deal.
           </p>
+          <form action="">
+            <div class="footer-input-wrapper">
+              <span class="input-icon"
+                ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
+              /></span>
+              <input
+                id="tel"
+                placeholder="Enter your phone number"
+                type="tel"
+              />
+            </div>
+            <button type="button" class="form-btn">Sign up Now</button>
+          </form>
         </div>
+      </div>
+      <div>
+        <p class="bottom-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
     </footer>
     <!-- footer -->
