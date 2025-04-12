@@ -37,7 +37,7 @@
               <li class="navbar-item">
                 <a href="./Customers.html">Customers</a>
               </li>
-              <li class="navbar-item"><a href="">Resources</a></li>
+              <li class="navbar-item"><a href="#">Resources</a></li>
             </ul>
           </nav>
 
@@ -45,6 +45,13 @@
             <li><button type="button" class="sign-in">Sign In</button></li>
             <li><button type="button" class="sign-up">Sign Uo</button></li>
           </ul>
+        </div>
+        <div class="burger-box">
+          <button class="btn-burger" type="button" data-menu-open>
+            <svg class="burger" width="24" height="24">
+              <use href="./images/fill_none_icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -276,9 +283,9 @@
       <section class="promo">
         <div class="container promo-container">
           <div class="promo-content">
-            <p class="promo-title">
+            <h2 class="promo-title">
               Join 100 Compannies who boost their business with Product
-            </p>
+            </h2>
             <button type="button" class="promo-btn">Get This</button>
           </div>
           <picture class="promo-page">
@@ -323,66 +330,147 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-logo">
-          <a href="./index.html" class="flogo"
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="./index.html" class="flogo"
+              ><span class="span-logo"
+                ><svg class="logo-svg" width="40" height="36">
+                  <use
+                    href="images/color_icons.svg#icon-logo"
+                  ></use></svg></span
+              >Product</a
+            >
+            <div class="social-container">
+              <a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use
+                    href="./images/fill_none_icons.svg#icon-instagram"
+                  ></use></svg></a
+              ><a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/fill_none_icons.svg#icon-fb"></use>
+                </svg> </a
+              ><a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/fill_none_icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-section">
+              <div class="footer-title"><p>Resource</p></div>
+
+              <a href="">About Us</a>
+              <a href="">Blog</a>
+              <a href="">Contact</a>
+              <a href="">FAQ</a>
+            </div>
+
+            <div class="footer-section">
+              <div class="footer-title"><p>Legal Stuff</p></div>
+
+              <a href="">Disclaimer</a>
+              <a href="">Financing</a>
+              <a href="">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="footer-form">
+            <p class="footer-form-title">
+              knowing you're always on the best energy deal.
+            </p>
+            <form>
+              <div class="footer-input-wrapper">
+                <span class="input-icon"
+                  ><svg class="phone-icon" width="24" height="24">
+                    <use
+                      href="./images/fill_none_icons.svg#icon-mobile-screen"
+                    ></use></svg
+                ></span>
+                <input
+                  id="tel"
+                  placeholder="Enter your phone number"
+                  type="tel"
+                />
+              </div>
+              <button type="button" class="form-btn">Sign up Now</button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <p class="bottom-text">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- mob-nav -->
+
+    <div class="mobile-nav" data-menu>
+      <div class="container mobile-container">
+        <button type="button" class="nav-btn" data-menu-close>
+          <svg width="9" height="9" class="close">
+            <use href="./images/fill_none_icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="logo-box">
+          <a href="./index.html" class="logo mobile-logo"
             ><span class="span-logo"
               ><svg class="logo-svg" width="40" height="36">
                 <use href="images/color_icons.svg#icon-logo"></use></svg></span
             >Product</a
           >
-          <div class="social-container">
-            <a href=""
-              ><img src="./icons/instagram.svg" alt="icon instagram" /></a
-            ><a href="">
-              <img src="./icons/facebook.svg" alt="icon facebook" /></a
-            ><a href="">
-              <img src="./icons/twitter.svg" alt="icon twitter"
-            /></a>
-          </div>
         </div>
-        <div class="footer-links">
-          <div class="footer-section">
-            <div class="footer-title"><p>Resource</p></div>
-
-            <a href="">About Us</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-            <a href="">FAQ</a>
-          </div>
-
-          <div class="footer-section">
-            <div class="footer-title"><p>Legal Stuff</p></div>
-
-            <a href="">Disclaimer</a>
-            <a href="">Financing</a>
-            <a href="">Privacy Policy</a>
-          </div>
-        </div>
-        <div class="footer-form">
-          <p class="footer-form-title">
-            knowing you're always on the best energy deal.
-          </p>
-          <form action="">
-            <div class="footer-input-wrapper">
-              <span class="input-icon"
-                ><img src="./icons/mobile-screen.svg" alt="mobile-screen"
-              /></span>
-              <input
-                id="tel"
-                placeholder="Enter your phone number"
-                type="tel"
-              />
+        <div class="mob-navi">
+          <nav>
+            <ul class="mobile-nav-list">
+              <li>
+                <a href="./index.html" class="mobile-nav-list-item">Product</a>
+              </li>
+              <li>
+                <a class="mobile-nav-list-item current" href="./Pricing.html"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a class="mobile-nav-list-item" href="./Customers.html"
+                  >Customers</a
+                >
+              </li>
+              <li>
+                <a class="mobile-nav-list-item" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="soc-contact">
+            <ul class="signmob">
+              <li><button type="button" class="sign-in">Sign In</button></li>
+              <li><button type="button" class="sign-up">Sign Uo</button></li>
+            </ul>
+            <div class="social-container mobile-social">
+              <a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use
+                    href="./images/fill_none_icons.svg#icon-instagram"
+                  ></use></svg></a
+              ><a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/fill_none_icons.svg#icon-fb"></use>
+                </svg> </a
+              ><a href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./images/fill_none_icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </div>
-            <button type="button" class="form-btn">Sign up Now</button>
-          </form>
+          </div>
         </div>
       </div>
-      <div>
-        <p class="bottom-text">
-          Made With Love By Figmaland All Right Reserved
-        </p>
-      </div>
-    </footer>
-    <!-- footer -->
+    </div>
+    <!-- mob-nav -->
+    <!-- script -->
+    <script src="./js/menu.js"></script>
+    <!-- script -->
   </body>
 </html>
