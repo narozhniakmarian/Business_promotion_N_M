@@ -1906,13 +1906,13 @@
 
  .nav-btn:hover,
  .nav-btn:focus {
-     background-color: #02897a;
+     background-color: #046f5bd4;
      border: none;
  }
 
  .nav-btn:hover .close,
  .nav-btn:focus .close {
-     fill: #9d360a;
+     fill: #ede0da;
  }
 
  .mob-navi {
@@ -2699,7 +2699,7 @@
  }
 
  /* ==///== */
- .containerr {
+ .modal-sing-in {
      width: 100%;
      padding-top: 60px;
      padding-bottom: 100px;
@@ -2718,24 +2718,41 @@
      pointer-events: none;
  }
 
- .containerr.is-open {
+ .modal-sing-in.is-open {
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
  }
 
- .containerr {
+ .modal-sing-in .container {
+     width: 430px;
+ }
+
+ @media (max-width: 767px) {
+     .modal-sing-in .container {
+         width: 412px;
+     }
+ }
+
+ .sing-in-wrapper {
+     position: relative;
      width: 100%;
-     padding-top: 60px;
-     padding-bottom: 100px;
+ }
+
+ .sing-in-wrapper .nav-btn {
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     right: 14px;
+     top: 32px;
  }
 
  .frame {
      height: 575px;
      width: 430px;
      background:
-         linear-gradient(rgba(35, 43, 85, 0.75),
-             rgba(35, 43, 85, 0.95)),
+         linear-gradient(rgba(26, 68, 43, 0.859),
+             rgb(27, 58, 47)),
          url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
      background-size: cover;
      margin-left: auto;
@@ -2770,7 +2787,7 @@
      opacity: 0;
  }
 
- li {
+ .linkss li {
      padding-left: 10px;
      font-size: 18px;
      display: inline;
@@ -2780,11 +2797,16 @@
      color: #ffffff;
  }
 
+ .linkss {
+     display: flex;
+     margin-left: 28px;
+ }
+
  .signin-active a {
      padding-bottom: 10px;
      color: #ffffff;
      text-decoration: none;
-     border-bottom: solid 2px #1059FF;
+     border-bottom: solid 2px #02897A;
      transition: all .25s ease;
      cursor: pointer;
  }
@@ -2801,7 +2823,7 @@
      cursor: pointer;
      color: #ffffff;
      text-decoration: none;
-     border-bottom: solid 2px #1059FF;
+     border-bottom: solid 2px #02897A;
      padding-bottom: 10px;
  }
 
@@ -2858,7 +2880,7 @@
      height: 150px;
      text-align: center;
      position: relative;
-     top: -890px;
+     top: -990px;
      left: 450px;
      opacity: .0;
      transition: all .8s .4s ease;
@@ -2869,6 +2891,7 @@
      opacity: 1;
  }
 
+
  .successtext {
      color: #ffffff;
      font-size: 16px;
@@ -2878,20 +2901,21 @@
      padding-right: 37px;
  }
 
+
  #check path {
-     stroke: #ffffff;
+     stroke: #1064410d;
      stroke-linecap: round;
      stroke-linejoin: round;
      stroke-width: .85px;
      stroke-dasharray: 60px 300px;
      stroke-dashoffset: -166px;
-     fill: rgba(255, 255, 255, .0);
-     transition: stroke-dashoffset 2s ease .5s, fill 1.5s ease 1.0s;
+     fill: rgba(6, 108, 74, 0);
+     /* transition: stroke-dashoffset 1ms ease .5s, fill 0.7s ease 0.4s; */
  }
 
  #check.checked path {
      stroke-dashoffset: 33px;
-     fill: rgba(255, 255, 255, .03);
+     fill: rgba(0, 79, 54, 0.03);
  }
 
  .form-signin input,
@@ -2981,7 +3005,7 @@
 
  /* on checked */
  [type="checkbox"]:checked+label:before {
-     background: #0F4FE6;
+     background: #02897A;
  }
 
  [type="checkbox"]:checked+label:after {
@@ -3026,18 +3050,18 @@
      font-size: 13px;
      text-align: center;
      color: #ffffff;
-     padding-top: 8px;
+     padding-top: 10px;
      width: 100%;
      height: 35px;
      border: none;
      border-radius: 20px;
      margin-top: 23px;
-     background-color: #1059FF;
+     background-color: #02897A;
  }
 
  .btn-signin {
      float: left;
-     padding-top: 8px;
+     padding-top: 10px;
      width: 100%;
      height: 35px;
      border: none;
@@ -3058,7 +3082,7 @@
      border: none;
      border-radius: 20px;
      margin-top: 23px;
-     background-color: rgba(16, 89, 255, 1);
+     background-color: #02897A;
      left: 0px;
      top: 0px;
      transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
@@ -3077,7 +3101,7 @@
  a.btn-signup:hover,
  a.btn-signin:hover {
      cursor: pointer;
-     background-color: #0F4FE6;
+     background-color: #00796B;
      transition: background-color .5s;
  }
 
@@ -3111,9 +3135,9 @@
 
  .welcome {
      width: 100%;
-     height: 50px;
+     height: 150px;
      position: relative;
-     color: rgba(35, 43, 85, 0.75);
+     color: rgba(52, 35, 85, 0.75);
      opacity: 0;
      transition: transform 1.5s ease .25s, opacity .1s ease 1s;
  }
@@ -3127,10 +3151,10 @@
      height: 150px;
      position: relative;
      left: 0px;
-     top: -900px;
+     top: -20px;
      background:
-         linear-gradient(rgba(35, 43, 85, 0.75),
-             rgba(35, 43, 85, 0.95)),
+         linear-gradient(rgba(35, 85, 52, 0.75),
+             rgba(35, 85, 63, 0.95)),
          url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/landscape-nature-man-person.jpeg);
      background-size: cover;
      opacity: 0;
@@ -3162,8 +3186,8 @@
      opacity: 1;
  }
 
- h1 {
-     color: #ffffff;
+ .welcome {
+     color: #00796B;
      font-size: 35px;
      font-weight: 300;
      text-align: center;
@@ -3174,7 +3198,7 @@
      margin-right: auto;
      top: -400px;
      float: left;
-     padding: 8px;
+     padding: 10px;
      width: 83%;
      margin-left: 37px;
      margin-right: 37px;
@@ -3184,9 +3208,9 @@
      text-transform: uppercase;
      font-size: 13px;
      text-align: center;
-     color: #1059FF;
+     color: #02897A;
      margin-top: -8px;
-     border: solid 1px #1059FF;
+     border: solid 1px #02897A;
      opacity: 0;
      transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
  }
@@ -3194,11 +3218,26 @@
  .btn-goback-up {
      top: -1080px;
      opacity: 1;
+
+ }
+
+ .btn-togo-up {
+     top: 60px;
+     left: -16px;
+     border: solid 1px #02897989;
+     opacity: 1;
  }
 
  a.btn-goback:hover {
      cursor: pointer;
-     background-color: #0F4FE6;
+     background-color: #00796B;
+     transition: all .5s;
+     color: #ffffff;
+ }
+
+ a.btn-togo:hover {
+     cursor: pointer;
+     background-color: #05594569;
      transition: all .5s;
      color: #ffffff;
  }
@@ -3225,8 +3264,9 @@
 
  .refreshicon:hover {
      cursor: pointer;
-     fill: #1059FF;
+     fill: #00796B;
      transform: rotate(180deg);
  }
+
 
  /* ==///== */
